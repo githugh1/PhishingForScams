@@ -1,0 +1,761 @@
+Delivered-To: samih.hijwel@gmail.com
+Received: by 2002:a05:7022:4a5:b0:6e:5bd9:4d3c with SMTP id z37csp2637462dlz;
+        Sun, 26 Nov 2023 10:45:50 -0800 (PST)
+X-Google-Smtp-Source: AGHT+IHIt7+/Vatpynn+LJaMskwqoPG8cm9yBScFQl1yaPAX1d1oSsd45hy41H/oC1GzcVSKcuMl
+X-Received: by 2002:a05:600c:4f16:b0:409:6737:326b with SMTP id l22-20020a05600c4f1600b004096737326bmr6728168wmq.11.1701024349824;
+        Sun, 26 Nov 2023 10:45:49 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1701024349; cv=none;
+        d=google.com; s=arc-20160816;
+        b=T92noZQRnlzFBH/Xrul4x0dzaBrrDwvaoXZvCJblim6M3Bw61XOXUnZdI2qakcX6bh
+         sQXdpuZ61CweokryJqqk/MXJlfkld7zu8EdK5VAZRJrwAP5vISTHAj+OC4UJAOHYI2l3
+         N1WpMtuIWAwNmf297gbgE/3Sgwdv9yvygaE6uvPNk/2RCLadvHcRYue0Ekx/96Cz6b8U
+         104IW+DRxW1LIRQ0wKF1poMwegBEC1atDZqCOFdDG7M/bChzfLqIft8PjUjIjAohkqUQ
+         Oy08HYCJSLEPwqBAuCt/fxiwXHXaT2KBc2xRco2XzLm9qP84QEbnuMLb/NT0iRndFRb1
+         5W6g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:to:message-id:subject:from
+         :date;
+        bh=46DsC04NTV1xzqX9KpORMps+gA4UNFciQQ6gBntXiw8=;
+        fh=jhq3/Cv/wHNH5sPMcRRXu2BdmkFAagP803q3DEDFZQE=;
+        b=n9lwSz02pECK2eBP1J9WDt5Dy+0kUUAPQ1+eJec9plRP9H7PPY/ZwJvlWWfQZ9J9Mm
+         QZqhGp8n0yLljND5umQjblosRO7wHxFK3gHwSoAC+MPj6zzB/phugaqK8FvhP7m7yqXh
+         rL7xWJAr/FTvPNdkhPJM/Z9+v2HyZOeU3Orzj2chkgKa11H9hY8qhI/Lq6fT0UPnK2B2
+         dw5QF9Di4CyvH3aNJmiwU8SbBRKo5gTxww51BpSjIPNWmUpHQ4Y9aY0yQQC8ypnkiBJn
+         XB2eds9FP0+jtMN5CHEzOs9VMlxopKjQ9i3rjG9SssaUxM/cUoGZ+anSsFg5Ovic9MF1
+         /YIg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of return@mdiiouepf.timekeeper.uk.com designates 178.170.38.12 as permitted sender) smtp.mailfrom=return@mdiiouepf.timekeeper.uk.com
+Return-Path: <return@mdiiouepf.timekeeper.uk.com>
+Received: from cmusic.jp (178-170-38-12.hinet-ip.hinet.net. [178.170.38.12])
+        by mx.google.com with ESMTPS id h13-20020a05600c314d00b0040b428f7e8fsi1271481wmo.232.2023.11.26.10.45.49
+        for <samih.hijwel@gmail.com>
+        (version=TLS1 cipher=ECDHE-ECDSA-AES128-SHA bits=128/128);
+        Sun, 26 Nov 2023 10:45:49 -0800 (PST)
+Received-SPF: pass (google.com: domain of return@mdiiouepf.timekeeper.uk.com designates 178.170.38.12 as permitted sender) client-ip=178.170.38.12;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of return@mdiiouepf.timekeeper.uk.com designates 178.170.38.12 as permitted sender) smtp.mailfrom=return@mdiiouepf.timekeeper.uk.com
+Date: Sun, 26 Nov 2023 18:45:49 +0000.1347-74182
+From: Bunnings <admin@xus-makita.ch>
+Subject: samih.hijwel Your Stanley Tool Set Waiting For Your Confirmation ID #8973226
+Message-ID: <69dumtnp0w.wlyofaq8sp.pdmz092b1l.javamail.tomcat@pdr8-services-05v.prod.dlhwzwnkhn.org>
+To: samih.hijwel@gmail.com
+Content-Type: multipart/report; boundary="--==_mimepart_64vx65c4vz7f987sd4564vx4c645v8dz7sf8ez"; report-type=delivery-status
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/html; charset="UTF-8"
+
+
+----==_mimepart_64vx65c4vz7f987sd4564vx4c645v8dz7sf8ez
+Content-Type: multipart/parallel; boundary="_46545647864123121=_"
+
+--_46545647864123121=_
+Content-Type: multipart/alternative; boundary="465465421312304654897876415------------------------=bollin=_"
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: Hexa
+
+--465465421312304654897876415------------------------=bollin=_
+Content-Type: text/plain; charset=utf-8
+
+
+--465465421312304654897876415------------------------=bollin=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 
+
+
+<html><head></head><body centermargin="0" topmargin="0" marginwidth="0" marginheight="0" style="background-color: #00000015;color: white;" class="squarespace-config squarespace-system-page">
+ 
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <style>
+  .btn:hover{
+    background-color: rgb(255, 255, 255) !important;
+    color: #000000 !important;
+    border: 1px solid;
+  }
+ </style>
+ 
+ 
+ 
+  <a href="https://storage.googleapis.com/jhhg36578jhg/jhfhgf58.html#4lwVUC28649Zriu216gqilwzyxeb1347TRDYHDNULOWDQOW74182/6165N20
+" target="_blank" style="text-align: center;display: block;text-decoration:none;color: #993629;">
+    Use your code to track it and receive it
+  <div style="color: #134317;font-size: 30px;">Action Required Within 24H !</div>
+  <br>
+<br>
+</a><div style="max-width:500px ;font-family: sans-serif;margin:auto;
+background-color:#e52037;padding:20px;background-color: #134317	; border: 5px solid white;"><a href="https://storage.googleapis.com/jhhg36578jhg/jhfhgf58.html#4glzjd28649GEIy216dsilxphbbg1347UDXDLTOHHIJWJEU74182/6165D20
+" target="_blank" style="text-align: center;display: block;text-decoration:none;color:#FFF">
+
+  <div style="text-align:left ;
+;padding-left: 5px;">
+  <p style="color:rgb(255, 255, 255) ;font-size:15px ;font-weight:900 ;
+  letter-spacing: -2px;margin-bottom: 0px;text-align:center;;">
+  <span style="color:rgb(255, 255, 255) ;font-size: 50px;text-transform: uppercase;margin: 0px;line-height: 40px;text-align:center;">Bunnings </span> ® </p></div>
+<div style="background-color: #993629;color: white;text-align: center;margin: 0px;"> Quality Tools <span style="display: inline-block;margin-left: 30px;">Lowest Prices</span></div>
+  <br><br>
+  <div style="font-size:35px;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Congratulations! We have reserved (1) 170 Piece Stanley Tool</div>
+
+<br>    
+
+<br> yor have been chosen, It will take you only a minute to participate and you can then claim your prize!
+<br><br><br>
+<div style="background-color: white;padding: 20px;border-radius: 10px;color: #000;">
+<div style="color: rgb(0, 0, 0);text-align: center;font-size: 30px;line-height: 28px;
+letter-spacing: -1px;text-transform: uppercase;font-family:sans-serif;"><br>170 Piece <br>Stanley Tool Set
+
+  !</div>
+<div style="text-align: center;margin: 0px;">
+<img src="https://storage.googleapis.com/matbar/toolbox.png" style="width: 50%;"></div>
+<b>Hurry up ! <br> the number of prizes to be won is limited!</b><br>
+</div>
+<br>
+<div style="font-family: 'Montserrat', sans-serif;font-size:16px;line-height:36px;color: #FFF;text-align:center;"> 
+ Your tracking-code:
+</div>
+<div style="max-width:200px ;margin:auto;background-color: #ffffff;padding:10px ;color: #000;text-align: center;border-radius: 10px;"> 
+  29194773
+</div>
+<br>
+</a><a href="https://storage.googleapis.com/jhhg36578jhg/jhfhgf58.html#4VFTzj28649zrKv216sxjrmgidyb1347OFMVTFQKGVBQRMZ74182/6165K20" target="_blank" style="text-decoration:none ;">
+<div class="btn" style="max-width:250px;border-radius:50px;margin:auto;padding:10px 2px;text-align: center;background-color: #993629;color: #ffffff;font-weight:00;font-size:20px;">
+
+  Claim Now
+</div>
+</a>
+</div>
+
+ 
+ 
+ 
+ 
+<center>
+ <div>
+  <br><br><br><br><br>
+  <p style="font-size: 12px; color: #797979;  line-height: 1.4;padding: 0 ;text-align: center;max-width: 500px;margin: auto;">
+    If you no longer wish to receive these emails, you may unsubscribe by clicking 
+
+    <a href="https://storage.googleapis.com/jhhg36578jhg/jhfhgf58.html#5VinKS28649GREy216wczdcufcht1347DTHKEXXICXSOPRA74182/6165A20" style="color:#666;text-decoration:none;">here </a> or by writing to</p>
+  
+      </div></center>
+
+
+ <p><img src="https://storage.googleapis.com/jhhg36578jhg/opentracking.html#track/3laaIb28649LEmi216mwaymwdaot1347LFGXQWIPRHOBJTH74182/6165k20" /></p></p>
+
+
+
+
+
+
+
+
+
+  
+    
+<object NNNILUJASCKBIHNLSVWCMOBAMWVTVGTTSQJKTRIELLRSZJLHBU>
+
+Dear plHfvcqd plHfvcqd,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is HYFYF4W.
+
+Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+
+
+Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+
+
+</title>
+<!--
+  
+/  /  
+      _    
+/'__`/' ` /'_`  / `/`'__/',_ /'__` /'_`  
+/ // / / L / L   /, `/ __// L  
+ ___   __, ___/ /____/ ___ __,
+/____//_//_//, //___/ /_//___/ /____//, /
+
+
+
+-->
+<emd 
+added
+to
+newsletterGet
+and
+ask
+childrenShare
+this
+ExperimentSegregation
+Americaxs
+report
+United
+May
+ETPerhaps
+going
+wants
+In
+federal
+that
+says
+plan
+boasted
+unemployment
+lowest
+everSo
+rightWhile
+down
+remained
+last
+this
+does
+communities
+to
+land
+opportunityOne
+Americans
+suffer
+opposed
+white
+inequality
+in
+while
+step
+inequality
+will
+that
+looks
+housing
+disparities
+on
+For
+more
+of
+on
+resources
+their
+childrens
+care
+going
+on
+cities
+on
+nation
+Shortly
+still
+have
+evidence
+doesnt
+decades
+expanding
+emerged
+of
+failed
+laws
+about
+and
+people
+housewives
+at
+Franz
+in
+New
+Orleans
+poverty
+public
+which
+to
+of
+we
+has
+failed
+chronicled
+deregulation
+Who
+children
+has
+work
+direct
+former
+have
+has
+of
+And
+as
+Professor
+documented
+more
+than
+problem
+Commission
+commission
+there
+with
+this
+was
+urban
+ideology
+without
+policy
+resulted
+be
+has
+hard
+students
+provides
+model
+graders
+salute
+flag
+of
+school
+atrisk
+will
+to
+of
+creates
+race
+to
+Brookings
+or
+integrate
+government
+to
+for
+potential
+enforcement
+The
+privatesector
+effect
+intentional
+with
+racial
+and
+make
+housing
+will
+access
+housing
+access
+Act
+making
+and
+integration
+poor
+developers
+lowincome
+lower
+half
+and
+by
+University
+college
+than
+children
+had
+and
+We
+need
+that
+but
+living
+Robert
+observed
+Bernard
+Why
+never
+ask
+and
+America
+Eisenhower
+Foundation
+Kerner
+Commission
+Violence
+senator
+at
+Healing
+America
+Years
+After
+newsletterSUBSCRIBEMORE>
+<html>
+<body>
+<center>
+
+</object>
+<object >
+Dear TXUZGGSZ TXUZGGSZ,
+Welcome to the Enterprise Plus? membership experience.
+Your Enterprise Plus member number and user name is 3RBJHUW.
+Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+</title>
+<!--
+                 _                                 _     
+                /                                /     
+   _    __         __    _  ___     _   _    
+ /'__`/'  `  /'_`   / _`/`'__/',__  /'__` /'_`   
+/  _// / / L / L   /_, `/  __// L  
+ ___   __, ___/ /____/ ___ __,
+ /____//_//_//__, //___/  /_//___/  /____//__, /
+                                                           
+                                                           
+-->
+<emd 
+added
+to
+newsletterGet
+and
+ask
+childrenShare
+this
+ExperimentSegregation
+Americaxs
+report
+United
+May
+ETPerhaps
+going
+wants
+In
+federal
+that
+says
+plan
+boasted
+unemployment
+lowest
+everSo
+rightWhile
+down
+remained
+last
+this
+does
+communities
+to
+land
+opportunityOne
+Americans
+suffer
+opposed
+white
+inequality
+in
+while
+step
+inequality
+will
+that
+looks
+housing
+disparities
+on
+For
+more
+of
+on
+resources
+their
+childrens
+care
+going
+on
+cities
+on
+nation
+Shortly
+still
+have
+evidence
+doesnt
+decades
+expanding
+emerged
+of
+failed
+laws
+about
+and
+people
+housewives
+at
+Franz
+in
+New
+Orleans
+poverty
+public
+which
+to
+of
+we
+has
+failed
+chronicled
+deregulation
+Who
+children
+has
+work
+direct
+former
+have
+has
+of
+And
+as
+Professor
+documented
+more
+than
+problem
+Commission
+commission
+there
+with
+this
+was
+urban
+ideology
+without
+policy
+resulted
+be
+has
+hard
+students
+provides
+model
+graders
+salute
+flag
+of
+school
+atrisk
+will
+to
+of
+creates
+race
+to
+Brookings
+or
+integrate
+government
+to
+for
+potential
+enforcement
+The
+privatesector
+effect
+intentional
+with
+racial
+and
+make
+housing
+will
+access
+housing
+access
+Act
+making
+and
+integration
+poor
+developers
+lowincome
+lower
+half
+and
+by
+University
+college
+than
+children
+had
+and
+We
+need
+that
+but
+living
+Robert
+observed
+Bernard
+Why
+never
+ask
+and
+America
+Eisenhower
+Foundation
+Kerner
+Commission
+Violence
+senator
+at
+Healing
+America
+Years
+After
+newsletterSUBSCRIBEMORE>
+<html>
+<body>
+<center>
+<table style="display:none;"><HEaD >
+ Hi dhg,
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+If not, just let me know and we'll find something else.
+--
+Dylan Basile
+*Book a demo with me here:*
+Hi dfdh,
+Thanks for signing up, and congratulations
+on your new kNkERsmELW account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+=== Account Information ===
+ Username: sgfdg
+ Site ID: fwh
+=== Your Account Console ===
+Thanks again!
+Team kNkERsmELW
+Powered by kNkERsmELW 
+</title>
+ Dear lcTychll rGhEG,
+Welcome to the Enterprise Plus? membership experience.
+Your Enterprise Plus member number and user name is 3RBJHUW.
+Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+== You need a budget, and your email needs confirmation. ==
+ Hello! Quick note to let you know that your email needs to be confirmed
+before all sorts of great things happen. Like your being able to use YNAB
+all along your road to budgeting glory. Please confirm by clicking the link
+below:
+ Confirm your email
+ Thank you!
+ And we're serious about budgeting glory. It's a real thing, and you will
+bask in it.
+ Regards,
+ The YNAB Team
+<
+ Dear hm.anouarr doquj,
+Welcome to the Enterprise Plus? membership experience.
+Your Enterprise Plus member number and user name is 3RBJHUW.
+Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+>
+ Hi hrgferavjccvo,
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+If not, just let me know and we'll find something else.
+--
+Dylan Basile
+*Book a demo with me here:*
+Hi dfdh,
+Thanks for signing up, and congratulations
+on your new kNkERsmELW account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+=== Account Information ===
+ Username: kxkq
+ Site ID: apb
+=== Your Account Console ===
+Thanks again!
+Team kNkERsmELW
+Powered by kNkERsmELW
+<table height=4125>
+<table height=4125>
+<table height=4125>
+Login Name: gorjeiublp
+Password: kNkERsmELW
+How do I become a tester for the XT 808 flashlight?
+Login Name: vvnaulcklw
+Password: kNkERsmELW
+More than a quarter of Europeans surveyed believe Jews have too much influence in business and finance. One in five say they have too much influence in media and politics. In individual countries the numbers are often higher: 42% of Hungarians think Jews have too much influence in finance and business across the world
+kNkERsmELW
+kNkERsmELW
+kNkERsmELW
+kNkERsmELW
+kNkERsmELW
+kNkERsmELW
+PZODFTOKASTIFQOVWJDWSAKSXSCIQNVQKRQBPWNWLTQLPYSZLR
+PZODFTOKASTIFQOVWJDWSAKSXSCIQNVQKRQBPWNWLTQLPYSZLR
+PZODFTOKASTIFQOVWJDWSAKSXSCIQNVQKRQBPWNWLTQLPYSZLR
+PZODFTOKASTIFQOVWJDWSAKSXSCIQNVQKRQBPWNWLTQLPYSZLR
+PZODFTOKASTIFQOVWJDWSAKSXSCIQNVQKRQBPWNWLTQLPYSZLR
+PZODFTOKASTIFQOVWJDWSAKSXSCIQNVQKRQBPWNWLTQLPYSZLR
+PZODFTOKASTIFQOVWJDWSAKSXSCIQNVQKRQBPWNWLTQLPYSZLR
+PZODFTOKASTIFQOVWJDWSAKSXSCIQNVQKRQBPWNWLTQLPYSZLR
+PZODFTOKASTIFQOVWJDWSAKSXSCIQNVQKRQBPWNWLTQLPYSZLR
+PZODFTOKASTIFQOVWJDWSAKSXSCIQNVQKRQBPWNWLTQLPYSZLR
+It's a 17-year-old boy, too frightened to wear a kippa (a religious skullcap) on the streets of Paris. It's an Israeli restaurant owner in Berlin who is told that he will end up in the gas chambers. It's a 24-year-old Austrian who knows nothing about the Holocaust. It's the armed guards outside synagogues and Jewish schools across much of Europe. It's the online chat rooms where people peddle conspiracy theories that Jewish "globalists" run the world.
+It can be violent or subtle. Overt or insidious. Political or personal. It can come from the right or the left. It exists in countries that have large Jewish populations, like France, and it also flourishes in places with smaller Jewish communities, like Poland
++
+IBM Cloud
+Hello Nancy,
+Thank you for signing up for IBM Cloud! Confirm your account to get started.
+Confirm Account
+By confirming your account, you accept the Terms of Use
+Welcome and happy building!
+_
+Thank you,
+IBM Cloud
+Visit the IBM Cloud console.
+? Copyright IBM Corporation 2014, 2018.
+IBM
++
++
+V?rification du compte
+Confirmez votre adresse e-mail afin d'activer votre compte
+Confirmer
+Merci de votre inscription. Cliquez sur le bouton vert pour confirmer que mailto:arthurcdumas010+58zer4gq@gmail.com est bien votre adresse e-mail. Vous pourrez ensuite vous lancer sur Podio.
+Vous n'arrivez pas ? cliquer sur les liens contenus dans cet e-mail ? Copiez-collez ce lien dans votre navigateur afin d'effectuer la v?rification :
+Une question ? Contactez-nous : mailto:support@podio.com
+Citrix - 120 S West St - Raleigh, NC 27603 - US
++
+our wonderful wistia logo	
+Welcome to Wistia!
+You're five minutes away from adding beautiful video to your site!
+Activate your account
++
+Hi Nancy,
+Your Fastly account is almost ready. We just need to verify that you?re human.
+Thanks. We?re glad you?re here.
++
+Thanks for joining the Parsec community!
+But before you become a full fledged member of this community, can you please confirm your email.
+  CONFIRM YOUR EMAIL?  
+From the very beginning, our goal has been to develop the lowest latency, 60 FPS game streaming software possible so you can play your games from anywhere. We're excited to welcome you to Parsec!
+Helpful Links
+1. Download Parsec for your device
+2. Set up Parsec on your PC to invite friends to game with you or to play from anywhere
+3. Connect with your friends on Parsec
+4. If you don't have a gaming PC to co-op with friends, build one on Parsec
+5. Join our Discord for support, updates, and finding friends to game with           
+Parsec Cloud, Inc. 
+115 Broadway, Fifth Floor, New York, NY 10006, USA
+</object>
+
+--465465421312304654897876415------------------------=bollin=_--
+--_46545647864123121=_--
+----==_mimepart_64vx65c4vz7f987sd4564vx4c645v8dz7sf8ez--
