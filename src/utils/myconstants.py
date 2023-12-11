@@ -79,7 +79,7 @@ EXPECTED = {
     "received": """from mail.example.com (mail.example.com [192.168.1.1]) 
             by smtp.example.net (Postfix) with ESMTP id ABCD1234 
             for <recipient@example.net>; Tue, 4 Dec 2023 15:30:00 +0000 (UTC)""",
-    "MIME": "1.0",
+    "mime_version": "1.0",
     "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
     "body": {
         "content_type": "text/plain",
