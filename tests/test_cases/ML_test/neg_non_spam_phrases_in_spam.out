@@ -1,0 +1,5 @@
+{
+  "is_spam": false,
+  "confidence": 0.15,
+  "message": "This email is not considered spam."
+}
