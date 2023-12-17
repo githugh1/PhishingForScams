@@ -1,7 +1,7 @@
 
 # A Python parsing service to convert raw email data into actionable data via json
 # To Do:
-#   - Integrate API
+#   - Integrate API (Mailgun?)
 #   - Discuss Byte Parsing
 #   - Resolve pytest issue
 
