@@ -5,18 +5,17 @@ if [ 'x'$1 == 'xcreate' ];
 then
     if [[ -z `ls -1 | grep '^'$kafka'$'` ]];
     then
-        mkdir kafka; 
-        cd kafka;
         git clone https://github.com/sulphurcrested/kafka.git;
     else
-        echo $kafka" directory already exists!";
+        echo $kafka" directory already exists ... updating content";
+        `cd $kafka; git pull; cd ..`;
     fi
-elif [ 'x'$1 == 'up' ];
+elif [ 'x'$1 == 'xup' ];
 then
-    docker-compose -f docker-compose.yml up --build --no-cache --detach kafka;
-elif [ 'x'$1 == 'down' ];
+    `docker compose -f $kafka/docker-compose.yml up --build --detach  kafka`;
+elif [ 'x'$1 == 'xdown' ];
 then
-    docker-compose -f docker-compose.yml down kafka;
+    `docker compose -f $kafka/docker-compose.yml down kafka`;
 else
     echo "USAGE: kafka.sh ['create' | 'up' | 'down' ]";
 fi
