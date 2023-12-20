@@ -4,7 +4,7 @@
 import json
 import pytest
 from src.utils.myconstants import CONTENT, ATTACHMENTS, BODY, EXPECTED
-from src.emailparser import EmailParser
+from src.email_parser.emailparser import EmailParser
 
 @pytest.fixture
 def email_parser():
