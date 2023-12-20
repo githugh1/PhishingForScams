@@ -1,6 +1,0 @@
-{
-  "email_subject": "Project Proposal",
-  "email_body": "Attached is the project proposal document...",
-  "sender": "project@email.com",
-  "attachments": ["proposal.pdf"]
-}

@@ -1,0 +1,5 @@
+{
+  "email_subject": "Long Email Subject",
+  "email_body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ... (long text)",
+  "sender": "longemail@email.com"
+}
