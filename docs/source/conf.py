@@ -30,7 +30,7 @@ extensions = [
             ]
 
 autodoc2_packages = [
-    '../src'
+    '../../src'
 ]
 autodoc2_render_plugin = "myst"
 # Document Python Code

@@ -3,7 +3,7 @@ For contributing to this project, follow these steps to get started:
 1. Review the architecture
 2. [Setup your environment](#setting-up-your-environment "Setting up your environment")
 3. Review the dev documentation
-4. Review the {doc}`Test <../../tests/README.md>` documentation
+4. Review the [Test]<project:tester> documentation
 5. Review the documentation guidelines
 
 ## Setting up your environment

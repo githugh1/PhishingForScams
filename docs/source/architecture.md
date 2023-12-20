@@ -42,7 +42,7 @@ PhishingForScams queueing fabric is a central component that binds everything in
 - **read**: to read the incoming work queue
 - **write**: to write the completed work to an outgoing queue.
 
-At this time the queueing fabric is implemented using {ref}`Kafka <https://github.com/sulphurcrested/kafka>` with {py:class}`src.q.kafka_q` which derives {py:class}`src.q.queue`. This modularity makes it easier to switch to another type of queueing fabric in the future if needed.
+At this time the queueing fabric is implemented using [Kafka](https://github.com/sulphurcrested/kafka) with {py:class}`src.q.kafka_q` which derives {py:class}`src.q.queue`. This modularity makes it easier to switch to another type of queueing fabric in the future if needed.
 
 ### Email Relay (proxy) Service
 TBA
