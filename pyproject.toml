@@ -4,9 +4,11 @@ build-backend = "hatchling.build"
 
 [project]
 name = "PhishingForScams"
-version = "0.0.1"
+dynamic = ["version"]
 authors = [
-  { name="Example Author", email="author@example.com" },
+  { name="sulphurcrested", email="144216809+sulphurcrested@users.noreply.github.com" },
+  { name="githugh1", email="author@example.com" },
+  { name="lbdoak", email="author@example.com" }
 ]
 description = "A small example package"
 readme = "README.md"
@@ -17,12 +19,15 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 
+[tool.setuptools.dynamic]
+version = {attr = "package.__version__"}
+
 [project.urls]
-# Homepage = "https://github.com/pypa/sampleproject"
-# Issues = "https://github.com/pypa/sampleproject/issues"
+Homepage = "https://github.com/githugh1/PhishingForScams"
+Issues = "https://github.com/githugh1/PhishingForScams/issues"
 
 [tool.pytest.ini_options]
-pythonpath = "src"
+pythonpath = "."
 minversion = "6.0"
 addopts = "-ra -q"
 testpaths = [

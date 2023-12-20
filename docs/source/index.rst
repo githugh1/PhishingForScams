@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to PhishingForScams's documentation!
-============================================
+Welcome to PhishingForScams's developer documentation!
+======================================================
 
 PhishinfForScams use ML / AI to identify malicious emails. It works as a mail relay server
 and it is transparent to the main mail server.
@@ -19,6 +19,11 @@ Table of Contents
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+
+   architecture
+   developer
+   tester
+   documentation
 
 
 Indices and tables
