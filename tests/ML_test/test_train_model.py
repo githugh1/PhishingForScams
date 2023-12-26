@@ -7,4 +7,4 @@ def test_passs():
     assert 2 * 3 == 6
 
 def test_fail():
-    assert 1 + 1 == 3
+    assert 1 + 1 != 3

@@ -15,7 +15,7 @@ class TestParser:
     
     @pytest.fixture
     def parsed_email(self, email_parser):
-        decoded = email_parser.parse_email('data/example3.eml')
+        decoded = email_parser.parse_email('tests/data/example3.eml')
         return json.loads(decoded)
 
     # Standard testing methods for common fields

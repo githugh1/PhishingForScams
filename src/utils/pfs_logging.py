@@ -1,9 +1,11 @@
-import logging, os
+import logging
+import os
 
 logger = logging.getLogger('PhishingForSpam')
 
 # create formatter and add it to the handlers
-formatter = logging.Formatter('%(asctime)s:%(name)s:%(module)s:%(levelname)s:%(funcName)s:\n\t%(message)s')
+formatter = logging.Formatter('%(asctime)s:%(name)s:%(module)s: \
+                              %(levelname)s:%(funcName)s:\n\t%(message)s')
 
 # setting the log level
 log_level = logging.DEBUG
@@ -14,7 +16,7 @@ env = os.getenv("PFS_ENVIRONMENT", "development")
 print(f"debugging level is set to {log_level}")
 
 # logging to file
-log_file = os.getenv("PFS_LOG_FILE", "")
+log_file = os.getenv("PFS_LOG_FILE", "pfs_logging.log")
 if log_file:
     fh = logging.FileHandler('log_file')
     fh.setLevel(log_level)
