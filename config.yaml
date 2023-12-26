@@ -1,0 +1,6 @@
+data:
+  file_path: 'dataset/Nigerian_5.csv'
+model:
+  epochs: 10
+  batch_size: 32
+

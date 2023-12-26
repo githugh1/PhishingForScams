@@ -1,0 +1,5 @@
+{
+  "email_subject": "Test Subject",
+  "email_body": "",
+  "sender": "test@email.com"
+}

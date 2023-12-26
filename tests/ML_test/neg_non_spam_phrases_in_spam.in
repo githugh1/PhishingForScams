@@ -1,0 +1,5 @@
+{
+  "email_subject": "Invoice Payment",
+  "email_body": "Your invoice payment is due...",
+  "sender": "billing@email.com"
+}
