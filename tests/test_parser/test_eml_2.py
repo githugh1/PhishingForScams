@@ -1,6 +1,6 @@
 
 import json, pytest
-from ...src.parser.email_parser import EmailParser
+from src.parser.email_parser import EmailParser
 from .utils.expected_outputs import EXPECTED_EML_2
 
 # source venv/Scripts/activate

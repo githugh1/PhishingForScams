@@ -1,32 +1,48 @@
 import logging
 import os
 
-logger = logging.getLogger('PhishingForSpam')
+_logger = logging.getLogger('PhishingForSpam')
 
 # create formatter and add it to the handlers
-formatter = logging.Formatter('%(asctime)s:%(name)s:%(module)s: \
+_formatter = logging.Formatter('%(asctime)s:%(name)s:%(module)s: \
                               %(levelname)s:%(funcName)s:\n\t%(message)s')
 
 # setting the log level
-log_level = logging.DEBUG
-env = os.getenv("PFS_ENVIRONMENT", "development")
-# if env == "production":
-#     log_level = logging.WARNING
+log_level: int = logging.DEBUG
+''' logging level is set to _WARNING_ for **production** 
+    environment, otherwise _DEBUG_     
+'''
+
+
+env: str = os.getenv("PFS_ENVIRONMENT", "development")
+''' the environment can be set using env var {envvar}`PFS_ENVIRONMENT` (Default: development)'''
+
+if env == "production":
+    log_level = logging.WARNING
 
 print(f"debugging level is set to {log_level}")
 
 # logging to file
-log_file = os.getenv("PFS_LOG_FILE", "pfs_logging.log")
-if log_file:
-    fh = logging.FileHandler('log_file')
+_log_file = 'pfs_log_file.log' if env != 'production' else ''
+log_file: str = os.getenv("PFS_LOG_FILE", _log_file)
+''' a log file can be set using env var {envvar}`PFS_LOG_FILE` in production (Default: not set!).
+
+    if the environment is not production, then by default logs will be writted to *pfs_log_file.log*
+'''
+
+if log_file != "":
+    fh = logging.FileHandler(log_file)
     fh.setLevel(log_level)
-    fh.setFormatter(formatter)
-    logger.addHandler(fh)
+    fh.setFormatter(_formatter)
+    _logger.addHandler(fh)
 
 # logging to console
-ch = logging.StreamHandler()
-ch.setLevel(log_level)
-ch.setFormatter(formatter)
-logger.addHandler(ch)
+_con = logging.StreamHandler()
+_con.setLevel(log_level)
+_con.setFormatter(_formatter)
+_logger.addHandler(_con)
 
-log = logger
+log: logging.Logger = _logger
+'''
+    python logger
+'''

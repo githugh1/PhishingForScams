@@ -44,6 +44,36 @@ PhishingForScams queueing fabric is a central component that binds everything in
 
 At this time the queueing fabric is implemented using [Kafka](https://github.com/sulphurcrested/kafka) with {py:class}`src.q.kafka_q` which derives {py:class}`src.q.queue`. This modularity makes it easier to switch to another type of queueing fabric in the future if needed.
 
+#### Queue Naming
+The queues can be scaled using additional identifiers ( scaling _num_ ) however the naming convension would be the same as below:
+
+:::{list-table} Kafka Queue Names
+:widths: auto
+:align: center
+:header-rows: 1
+:name: kafka_queue_names
+
+*   - Mincroservice
+    - Consumes (RecieveQ)
+    - Produces (SendQ)
+*   - {py:class}`Email Parser <src.parser.email_parser.EmailParser>`
+    - NEW_EMAILS_Q _num_
+    - PARSED_EMAILS_Q _num_
+*   - {py:class}`AI Scanner <src.ai.ai_trainer.AITrainer>`
+    - PARSED_EMAILS_Q _num_
+    - SCANNED_EMAILS_Q _num_
+*   - Policer
+    - SCANNED_EMAILS_Q _num_
+    - POLICED_EMAILS_Q _num_
+*   - Relay
+    - POLICED_EMAILS_Q _num_
+    - N/A (delivery)
+*   - Stats Analyzer
+    - STATS_Q _num_
+    - N/A (populates a db)
+
+:::
+
 ### Email Relay (proxy) Service
 TBA
 ### Email Parser

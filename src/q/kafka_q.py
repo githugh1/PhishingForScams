@@ -5,53 +5,84 @@ from src.q.queue import queue, QException
 from kafka.producer.record_accumulator import AtomicInteger
 
 PRODUCER_CLIENT_ID_SEQUENCE = AtomicInteger()
+""" generates a unique identifier for testing purposes """
+
 CONSUMER_CLIENT_ID_SEQUENCE = AtomicInteger()
+""" generates a unique identifier for testing purposes """
 
 class kafka_q(queue):
-    """This class implements a queue using Kafka. It is deriving :class:`src.q.queue`.
+    """This class implements a queue using Kafka.
 
-    The following environement variables must be set prior to initialising this class
-        `PFS_KAFKA_SRVR` : kafka server ip address or dns
-        `PFS_KAFKA_PORT` : kafka server port
-        `PFS_KAFKA_RQ` : name of the queue (topic) to read from
-        `PFS_KAFKA_WQ` : name of the queue (topic) to write to
+    It is deriving {class}`src.q.queue` and implements both _read_ and _write_ methods
+    inline with Kafka queue implementation.
 
-    :param producer: A handle to :class:`kafka.KafkaProducer`
-    :type producer: class:`kafka.KafkaProducer`
-    ...
-    :param consumer: A handle to :class:`kafka.KafkaConsumer`
-    :type consumer: class:`kafka.KafkaConsumer`
-    ...
-    :param kafka_config: config dict containing kafka particulars:
-        {
-            server: <server ip or dns>
-            port: <port>
-            rtopic: <queue topic> to read from
-            wtopic: <queue topic> to write to
-        }
-    :type kafka_config: dict
-    ...
-    :raises QException: when errors occur (TODO: need to define this clearer!)
+    #### Attributes:
+       - **producer**: ({class}`kafka.KafkaProducer`) -- A handle to kafka producer queue.
+                         this is the queue that is used by the _write_ method to produce
+                         new item
+       - **consumer**: ({class}`kafka.KafkaConsumer`) -- A handle to kafka consumer queue.
+                         this is the queue that is used by the _read_ method to consume
+                         items
+
+    #### Environment Variables:
+       - {envvar}`PFS_KAFKA_SRVR`
+            kafka server ip address or DNS identifier (Default: localhost)
+       - {envvar}`PFS_KAFKA_PORT`
+            kafka server port (Default: 9092)
+       - {envvar}`PFS_KAFKA_RQ`
+            name of the queue (topic) to read from
+       - {envvar}`PFS_KAFKA_WQ`
+            name of the queue (topic) to write to
+       - {envvar}`PFS_KAFKA_REQUEST_TIMEOUT_MS`
+            sets the server request timeouts in milliseconds
+            for both the producer and consumer (Default: 3000 ms)
+       - {envvar}`PFS_KAFKA_PRODUCER_ID`
+            sets the producer id (Default: PFS_PRODUCER)
+       - {envvar}`PFS_KAFKA_COMSUMER_ID`
+            sets the consumer id (Default: PFS_CONSUMER)
+       - {envvar}`PFS_KAFKA_COMSUMER_GROUP_ID`
+            sets the consumer group id (Default: PFS_CONSUMER_GROUP)
+
+
+    #### Raises:
+       - {class}`QException`: exception when errors are detected or mandatory
+                               environment variables are not set
     """
 
     def __init__(self):
         """class constructor
 
-        The following environement variables must be set:
-        `PFS_KAFKA_SRVR` : kafka server ip address or dns
-        `PFS_KAFKA_PORT` : kafka server port
-        `PFS_KAFKA_RQ` : name of the queue (topic) to read from
-        `PFS_KAFKA_WQ` : name of the queue (topic) to write to
+        The following environement variables [must]{.bg-warning} be set correctly:
+           - {envvar}`PFS_KAFKA_RQ`: name of the queue (topic) to read from
+           - {envvar}`PFS_KAFKA_WQ`: name of the queue (topic) to write to
+
+        The following environment variables are optional:
+           - {envvar}`PFS_KAFKA_SRVR`: kafka server ip address or dns (Default: localhost)
+           - {envvar}`PFS_KAFKA_PORT`: kafka server port (Default: 9092)
+           - {envvar}`PFS_KAFKA_REQUEST_TIMEOUT_MS`: sets the server request timeouts in milliseconds
+           - {envvar}`PFS_KAFKA_PRODUCER_ID`: sets the producer id
+           - {envvar}`PFS_KAFKA_COMSUMER_ID`: sets the consumer id
+           - {envvar}`PFS_KAFKA_COMSUMER_GROUP_ID`: sets the consumer group id
+
+        ```{note}
+            The optional environment variables are needed to scale the system
+            using multiple kubernetes clusters without confusion
+        ```
 
         """
 
         # env keys
         keys = [
-            "PFS_KAFKA_SRVR",
-            "PFS_KAFKA_PORT",
+            # "PFS_KAFKA_SRVR",
+            # "PFS_KAFKA_PORT",
             "PFS_KAFKA_RQ",
             "PFS_KAFKA_WQ"
         ]
+        """
+            mandatory environment variables
+
+            if not set, {py:class}`src.q.queue.QException` is raised.
+        """
 
         for k in keys:
             if k not in os.environ:
@@ -67,28 +98,57 @@ class kafka_q(queue):
             "consumer_group_id": os.getenv("PFS_KAFKA_COMSUMER_GROUP_ID", "PFS_CONSUMER_GROUP"),
             "producer_id": os.getenv("PFS_KAFKA_PRODUCER_ID", "PFS_PRODUCER"),
         }
+        '''
+            default config
+        '''
+
+        _env = os.getenv("PFS_ENVIRONMENT", "development")
 
         # initializing Kafka producer (threading safe)
-        id = PRODUCER_CLIENT_ID_SEQUENCE.increment()
+        _id = "" if _env == "production" else PRODUCER_CLIENT_ID_SEQUENCE.increment()
         self.producer = KafkaProducer(bootstrap_servers=[f"{self.config['server']}:{self.config['port']}"],
                                       #request_timeout_ms=int(self.config['request_timeout']),
                                       value_serializer=lambda m: json.dumps(m).encode('utf-8'),
-                                      client_id=f"{self.config['producer_id']}-{id}")
+                                      client_id=f"{self.config['producer_id']}-{_id}")
 
         # initializing Kafka consumer (not treading safe!)
-        id = CONSUMER_CLIENT_ID_SEQUENCE.increment()
+        _id = "" if _env == "production" else PRODUCER_CLIENT_ID_SEQUENCE.increment()
         self.consumer = KafkaConsumer(bootstrap_servers=[f"{self.config['server']}:{self.config['port']}"],
                                       value_deserializer=lambda m: json.loads(m.decode('utf-8')),
                                       #request_timeout_ms=int(self.config['request_timeout']),
                                       #consumer_timeout_ms=3000,
                                       enable_auto_commit=True, auto_offset_reset='earliest',
-                                      client_id=f"{self.config['consumer_id']}-{id}",
-                                      group_id=f"{self.config['consumer_group_id']}-{id}")
+                                      client_id=f"{self.config['consumer_id']}-{_id}",
+                                      group_id=f"{self.config['consumer_group_id']}-{_id}")
         
         self.consumer.subscribe([self.config["rtopic"]])
 
 
-    def get_consumer_status(self):
+    def get_consumer_status(self) -> dict:
+        ''' returns a dict describing the consumer status
+
+            :returns dict: consumer status
+
+            ::::{admonition} Example Consumer Status
+            :class: tip
+
+            :::{code-block} python
+            :lineno-start: 1
+                
+                {
+                    "client_id": "PFS_CONSUMER-1",
+                    "subscription": [
+                                        "PFS_KAFKA_RQ"
+                                    ],
+                    "inflight fetches": [],
+                    "topics": [
+                                "PFS_KAFKA_RQ"
+                                ],
+                    
+                }
+            :::
+            ::::
+        '''
         con = self.consumer
         status = {
                 "client_id": con.config['client_id'],
@@ -127,8 +187,11 @@ class kafka_q(queue):
 
  
     def read(self):
-        """Returns an item from kafka queue (topic). This method will block for synchronous retrival of the item.
-        :return: An item from the queue as a UTF-8 decoded string
+        """Returns an item from kafka queue (topic).
+        
+        This method will block for synchronous retrival of the item.
+
+        :returns: An item from the queue as a UTF-8 decoded string
         :rtype: string
         """
         log.debug(f"{self.consumer.config['client_id']} topics:{self.consumer.topics()}")
@@ -144,7 +207,9 @@ class kafka_q(queue):
         return value[0].value
 
     def bulk_read(self, max_items: int = 500) -> list:
-        """Returns a list of items from kafka queue (topic). Similar to read but returns a list upto max_items
+        """Returns a list of items from kafka queue (topic).
+        
+        Similar to read but returns a list upto max_items
         This method will block for synchronous retrival of the items.
         
         Arguments:
@@ -175,7 +240,9 @@ class kafka_q(queue):
 
     
     def write(self, item: dict, block: bool = False) -> bool:
-        '''Writes an item to kafka queue(topic). The queue (topic) should be assigned during init
+        '''Writes an item to kafka queue(topic).
+        
+        The queue (topic) should be assigned during init
 
         Arguments:
             item (dict): a dict item to be sent over kafka

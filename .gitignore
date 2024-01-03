@@ -1,9 +1,11 @@
 .pytest_cache
 .vscode
+.DS_Store
 __pycache__/
 docs/build
 docs/source/apidocs/
 kafka
 venv
+*.log
 
 

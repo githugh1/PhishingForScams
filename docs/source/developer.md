@@ -3,7 +3,7 @@ For contributing to this project, follow these steps to get started:
 1. Review the architecture
 2. [Setup your environment](#setting-up-your-environment "Setting up your environment")
 3. Review the dev documentation
-4. Review the [Test]<project:tester> documentation
+4. Review the [Test](./tester.md) documentation
 5. Review the documentation guidelines
 
 ## Setting up your environment
@@ -37,8 +37,20 @@ Running `kafka.bash` assumes that you have installed docker. If you havent then 
 
 ## Developer API Docuementaion
 
-```{include}   apidocs/index
-```
+### API Reference
+Refer to the {{ LATEST_API_REF }} section.
+
+### Indices and tables
+
+* {ref}`genindex`
+* {ref}`modindex`
+
+<!-- >```{toctree}
+:maxdepth: 3
+
+apidocs/index
+``` -->
+
 
 
 
