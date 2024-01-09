@@ -9,15 +9,16 @@
 # Setup: pip install mysql-connector-python
 
 # Helpful Guide: https://dev.mysql.com/doc/connector-python/en/connector-python-examples.html
+# See root README for temporary usage instructions
 
 import json
 from mailparse import EmailDecode
 import argparse, mysql.connector
 
 CONFIG = {
-    'host': 'localhost', #'127.0.0.1',
-    'user': 'root',
-    'password': 'Benjamin04',
+    'host': 'localhost', # Sub with IP address in future servers
+    'user': 'root', # Could change with additional users
+    'password': 'your_password',
     'database': 'phishing_for_scams', 
     'port': '3306',
     'raise_on_warnings': True

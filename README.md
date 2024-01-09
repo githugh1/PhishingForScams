@@ -33,6 +33,21 @@ Running `kafka.bash` assumes that you have installed docker. If you havent then 
 #### Terminate [kafka](https://github.com/sulphurcrested/kafka "sulphurcrested/kafka"):
 `bash kafka.bash down`
 
+### Setup MySQL
+-----------
+**You need to download MySQL First!**
+The MySQL Community Edition can be found [here](https://dev.mysql.com/downloads/installer/). (Script in progress)
+
+Follow the setup instructions as outlined in [this video](https://www.youtube.com/watch?v=wgRwITQHszU).
+
+Once you have opened a localhost server in MySQL, select 'new Query', then navigate to this project directory and select src\db\phishing_for_scams_db.sql
+At the top of the database, select execute (lightning symbol) and then refresh the Schema via the button in the top right of the window to create the database. --> (will be altered in future)
+
+#### Running The Parser
+To run email_parser in terminal and parse an email to the database, you must alter the CONFIG of email_parser first. To run on localhost, you must only input your selected password. Everything else has been provided.
+
+Before running, ensure you have installed all requirements via the text file. To run the parser, simply navigate to the root directory and execute `python src/parser/email_parser.py path/to/file.eml`. Refresh your schema window on mySQL and the table will be updated with the new data. (Will be improved with scripting in future)
+
 ## Configuration
 TBA
 
