@@ -32,6 +32,7 @@ mdit-py-plugins==0.4.0
 mdurl==0.1.2
 ml-dtypes==0.2.0
 myst-parser==2.0.0
+mysql-connector-python==8.2.0
 numpy==1.26.2
 nltk==3.8.1
 oauthlib==3.2.2
