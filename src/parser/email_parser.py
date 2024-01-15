@@ -32,7 +32,7 @@ class EmailParser:
     def parse_email(self, file):
         
         decoded = EmailDecode.open(file)
-        self.insert_into_table(decoded)
+        #self.insert_into_table(decoded)
         return json.dumps(decoded, indent=4)
     
     def connect_to_db(self):
