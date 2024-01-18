@@ -1,0 +1,1063 @@
+Delivered-To: lachlanbdoak@gmail.com
+Received: by 2002:a05:6a10:1f81:b0:527:7d7d:3007 with SMTP id rm1csp2052530pxb;
+        Mon, 18 Dec 2023 15:27:23 -0800 (PST)
+X-Google-Smtp-Source: AGHT+IG7qkbgNv3+kzfSBAhw2Pp18X3Fat6qkhscDNt8Uilf1TMgAmdQbS2TcVz8TgwH1AIEwJnB
+X-Received: by 2002:a05:6214:e62:b0:67f:1fdc:ae7b with SMTP id jz2-20020a0562140e6200b0067f1fdcae7bmr410296qvb.2.1702942043282;
+        Mon, 18 Dec 2023 15:27:23 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1702942043; cv=none;
+        d=google.com; s=arc-20160816;
+        b=y2WuQPyZ8OMDzjLx+oWz7GXdRPSAIIrKK7F6+xz7jRrF6MqV3Jes2Qkxnt/AWe1hjD
+         bRZVNK/mAxN98M1Vc1EOD32Lv9WsaDobG56IkSMQxqbfuDaTamFDhkq5Cp43VupggTYO
+         uOlEocLU7l4dltWstXltd4IgVn58pEeQWcW/09vt1teU3M6b907dYpiIxkc1lrByndtF
+         pk4az3WPPa7yee1jXWcBWPHlZCsm/S47dHuA1ddokFt3l698V46sFo6zsc5s63CXTljX
+         lp1cQFjwfcRShaB4F4+X2ymSz7xpl7EbhXntFjZ5fcKcofHmy1HCjl9GPVEsQrTiuMTw
+         UWtQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=message-id:list-unsubscribe-post:list-unsubscribe:feedback-id
+         :content-transfer-encoding:mime-version:date:subject:reply-to:from
+         :to:cfbl-address:dkim-signature:dkim-signature;
+        bh=1V9z/d5ZbjEWXkBnX95+/3l6jbgdou2Tchhx3Cou/6w=;
+        fh=YL/dMuYeChIYd7QX9fUMa+yOTNAJ3dx0R4OfZ+qenqQ=;
+        b=0rJy1p+AJe/FwzehuA/qZTQ5fAIAKdJOJ/FPs4l0d1AghsGpf7xZNGuz+aPUhRmoTj
+         +8R0d2S7zuqVdFCPqRalZbpay5zcTzj694+3AKWQpg4jkPyVAQs6J+y864TnOPvSDf1q
+         BGBbn1Uzx4EFtYBp+d2UgZHfEE2RyrLYLCZ47L10HCRhYyYofOCmMjOK1LpUZDcG8KbZ
+         zMxmD4024GeryeXTQ4agSee6gAxoQFjw39m3diKJx9+GtxjZ4A17q3c5VncJyizfZ5xZ
+         iATCN7AuYg2iukssPmPCPtvVMExYwdjVRRtYf8kuWmHNidwgVEjgTFy5xmdu96ljFRGw
+         BCBg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@bjkuniversity.com header.s=acdkim1 header.b=qQcWqdfc;
+       dkim=pass header.i=@acems1.com header.s=dk header.b=4ErjAly5;
+       spf=pass (google.com: domain of bounce-918012-2179-83316-lachlanbdoak=gmail.com@s6.csa1.acemsd3.com designates 52.128.40.127 as permitted sender) smtp.mailfrom="bounce-918012-2179-83316-Lachlanbdoak=gmail.com@s6.csa1.acemsd3.com";
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=bjkuniversity.com
+Return-Path: <bounce-918012-2179-83316-Lachlanbdoak=gmail.com@s6.csa1.acemsd3.com>
+Received: from s6.csa1.acemsc5.com (s6.csa1.acemsc5.com. [52.128.40.127])
+        by mx.google.com with ESMTPS id o2-20020a0ce402000000b0067f2cd806bbsi5963172qvl.446.2023.12.18.15.27.23
+        for <Lachlanbdoak@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Mon, 18 Dec 2023 15:27:23 -0800 (PST)
+Received-SPF: pass (google.com: domain of bounce-918012-2179-83316-lachlanbdoak=gmail.com@s6.csa1.acemsd3.com designates 52.128.40.127 as permitted sender) client-ip=52.128.40.127;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@bjkuniversity.com header.s=acdkim1 header.b=qQcWqdfc;
+       dkim=pass header.i=@acems1.com header.s=dk header.b=4ErjAly5;
+       spf=pass (google.com: domain of bounce-918012-2179-83316-lachlanbdoak=gmail.com@s6.csa1.acemsd3.com designates 52.128.40.127 as permitted sender) smtp.mailfrom="bounce-918012-2179-83316-Lachlanbdoak=gmail.com@s6.csa1.acemsd3.com";
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=bjkuniversity.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=acdkim1; d=bjkuniversity.com;
+ h=To:From:Reply-To:Subject:Date:MIME-Version:Content-Type:
+ Content-Transfer-Encoding:List-Unsubscribe:List-Unsubscribe-Post:Message-ID;
+ i=bashar@bjkuniversity.com;
+ bh=1V9z/d5ZbjEWXkBnX95+/3l6jbgdou2Tchhx3Cou/6w=;
+ b=qQcWqdfc0tZuhUSgICQxvwGr0ZeIwWWyZbV7IzgRU45SkZFIUIIXgsvmGtchymkLazitB/1ACyXv
+   eYIsjazYRn53oFfK+Fdrqx/4a25RAUnTBvr5jYg9MJ2j5p1tOKqkx3qpMfm/QqpVw4aYFXFMzzKJ
+   IO9nkvIRVg2+HEPQDNExpk9JbdxMiOi8NbMkjJZ8mpLCt4TPat/FsFkCWHv/E/n88eePKKm4OLuj
+   PEgjhAW2kMn2CHqwagzz1n/ZcFfclwyYKWXt7M9QHgLdOj43kCRAQ9mqVrU5ka1DZuHG8PofwH9x
+   LxC7neaPbPsX9Z25DaQ7A/5oqVA9KHIeET9E/w==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=dk; d=acems1.com;
+ h=To:From:Reply-To:Subject:Date:MIME-Version:Content-Type:
+ Content-Transfer-Encoding:List-Unsubscribe:List-Unsubscribe-Post:Message-ID;
+ bh=1V9z/d5ZbjEWXkBnX95+/3l6jbgdou2Tchhx3Cou/6w=;
+ b=4ErjAly56z51aiXkhv82SS8qyjDyug6L4IXLUb7AP4ZlYbIBD9tYg38LGAlP85+AIvDvG+SDjmR2
+   hEBfphvrE2SXMqG/0RE8dlanHrnJQVguLwoo4tPMwT7Sh/usOJM4CF/N9/gqsYn5LnpM7wXMJ+ew
+   Rjz7KSQ+4gG8MawZyWw=
+Received: by s6.csa1.acemsc2.com id hg3alm365bkk for <Lachlanbdoak@gmail.com>; Mon, 18 Dec 2023 23:26:33 +0000 (envelope-from <bounce-918012-2179-83316-Lachlanbdoak=gmail.com@s6.csa1.acemsd3.com>)
+X-Mailer: ActiveCampaign Mailer
+CFBL-Address: fbl-report@acems1.com; report=arf
+To: Lachlanbdoak@gmail.com
+From: "Bashar J. Katou" <bashar@bjkuniversity.com>
+Reply-To: reply-basharjkatou.activehosted.2179.33122.83316@s6.csa1.acemsd3.com
+Subject: Quick Heads-Up: Don't Miss The EXCLUSIVE Holiday Promo!
+Date: Mon, 18 Dec 2023 17:16:21 -0600
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift-12102603086580d2c75bb362.38959247_=_"
+Content-Transfer-Encoding: 7bit
+X-DKIM-Options: s=acdkim1
+X-mid: TGFjaGxhbmJkb2FrQGdtYWlsLmNvbSAsIGMyMTc5ICwgbTMzMTIyICwgczE3MjE1MDE
+x-virtual-mta: s6.csa1.acemsc2.com
+Feedback-ID: 918012:918012.2179:s6.csa1.acemsc2.com:activecampaign
+X-250ok-CID: 918012-2179
+List-Unsubscribe: <mailto:unsubscribe-8d3617f1569d3636d42d1f72401f961e-2179-7a173e7d26abf7441884996353c13cc6@s6.csa1.acemsd3.com>,
+ <http://basharjkatou.activehosted.com/box.php?nl=77&c=2179&m=33122&s=7a173e7d26abf7441884996353c13cc6&funcml=unsub2&luha=1>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Message-ID: <20231218232633.30974.1756953192.swift@basharjkatou.activehosted.com>
+
+
+--_=_swift-12102603086580d2c75bb362.38959247_=_
+Content-Type: text/plain; charset=utf-8
+
+͏‌  
+ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+
+ 
+
+Hey ,
+
+Just wanted to drop in quickly because I don't want you to miss out on
+something HUGE.
+
+As you may know, we're offering our Amazon Launch Program for only $97
+instead of $997.
+
+Here's the deal - we're almost out of spots. 
+
+As of yesterday, 62 spots were filled. 
+
+That means there are just 38 left, probably even less by the time
+you're reading this.
+
+If you want to kick off 2024 with a bang, learn our best strategies to
+build an Amazon FBA business that enables you to live your life on your
+terms... 
+
+There's no time to wait.
+
+For less than a hundred bucks, you're getting access to everything
+that usually costs ten times that. 
+
+We're talking about a blueprint that could set you up for success,
+give you more freedom to spend time with your loved ones, and let you
+make your dreams a reality.
+
+Here's the catch - once those spots are gone, they're gone, and
+they're going FAST.
+
+I just don't want you to look back and wish you'd taken this chance.
+
+It's an INSANELY low investment compared to how it could change your
+life.
+
+So, if you're ready to make 2024 the year go to the next level and
+make it your best year ever, now's the time to take action!
+
+Click here to claim one of the LAST spots for $97 instead of $997!
+
+Hope to welcome you there!
+
+Bashar
+
+About Us: We show you how to build and grow an Amazon FBA business that
+changes your life.
+
+Over the years, and thousands of success stories later, our primary goal
+is to always help you grow your business! In addition to helping you get
+results, our relationship with you is really important to us. We want to
+make sure every time you have a question you always leave with an answer
+to a problem that takes your business to the next level.
+
+We particularly appreciate it when our customers provide feedback via
+testimonials, reviews, and comments left on our site or social media
+accounts. That feedback is important to us because we can use it to make
+your next experience on our site even better than the last!
+
+Since we put so much effort into the relationship with you, we hope that
+any investment in us is exactly the way you hoped it would be.
+
+We Value Your Privacy: Now, as much as we care about helping your
+business, we also care about your privacy. bjkuniversity.com is owned
+and operated by BJK Institutions, Inc. We're committed to the right to
+your privacy and strive to provide a safe and secure user experience.
+Our Privacy Policy explains how we collect, store and use personal
+information, provided by you on our website. It also explains how we
+keep it safe and ensure we will never abuse what should be kept private.
+
+What Our Privacy Protects: When you visit our website you may provide us
+with two types of information: personal information you knowingly choose
+to disclose that is collected on an individual basis and information
+collected on an aggregate basis as you and others browse our Website.
+
+For example, you may need to provide the following information:
+
+* Name
+* Website URL information
+* Email address
+* Home and business phone number
+
+In addition to providing the foregoing information, if you choose to
+correspond further with us through email, we may retain the content of
+your email messages together with your email address and our responses.
+We provide the same protections for these electronic communications that
+we employ in the maintenance of information received by mail and
+telephone. By accessing and using our website, you explicitly accept,
+without limitation or qualification, the collection, use, and transfer
+of personal information and non-personal information in the manner
+described in our Privacy Policy. Please read the Policy on our
+website(s) carefully, as it affects your rights and liabilities under
+the law. If you disagree with the way we collect and process personal
+and non-personal information, please do not use this website. This
+Policy applies to this website as well as all web pages
+bjkuniversity.com  hosts. Our Policy also regulates the processing of
+information relating to you and grants both of us various rights with
+respect to your personal information. It also informs you of how to
+notify us to stop using your personal information.
+Why Your Privacy Is Important: Our Privacy Policy also explains
+important information that ensures we won't abuse the information that
+you provide to us in good faith. By accessing and using our website, you
+can trust that what you want to be kept private, will be kept private.
+If at any time you would like to read our Privacy Policy and get a
+better understanding of your rights and liabilities under the law, feel
+free to visit our site. There you can find the privacy policy in the
+footer and read it. If there is something you are concerned about or
+wish to get more clarity on, please let us know by replying to this
+email. The Privacy Policy also informs you of how to notify us to stop
+using your personal information. If you wish to view our official
+policies, please visit our website.
+
+If you end up visiting our site, we are strongly committed to protecting
+your privacy and providing a safe & high-quality online experience for
+all of our visitors. We understand that you care about how the
+information you provide to us is used and shared. We have developed a
+Privacy Policy to inform you of our policies regarding the collection,
+use, and disclosure of information we receive from users of our website.
+
+Our Privacy Policy, along with our Terms & Conditions, governs your use
+of this site. By using bjkuniversity.com, or by accepting the Terms of
+Use (via opt-in, checkbox, pop-up, or clicking an email link confirming
+the same), you agree to be bound by our Terms & Conditions and our
+Privacy Policy.
+
+If you have provided personal, billing, or other voluntarily provided
+information, you may access, review, and make changes to it via
+instructions found on the Website or by replying to this email. To
+manage your receipt of marketing and non-transactional communications,
+you may unsubscribe by clicking the "unsubscribe" link located at the
+bottom of any marketing email. Emails related to the purchase or
+delivery of orders are provided automatically - Customers are not able
+to opt out of transactional emails. We will try to accommodate any
+requests related to the management of Personal Information in a timely
+manner. However, it is not always possible to completely remove or
+modify information in our databases (for example, if we have a legal
+obligation to keep it for certain timeframes, for example). If you have
+any questions, simply reply to this email or visit our website to view
+our official policies.
+
+Disclaimer: Certain products or services in the BJK Institutions, Inc we
+may be for meaning, we may receive compensation for recommending and
+promoting products/services linked. We do so in good faith because we
+truly believe in them. We vow to never recommend a product we don't
+personally use or trust.
+
+Every effort has been made to accurately represent information and its
+potential. Please note that, like any marketing and sales course, there
+is no guarantee that you will earn any money using the techniques and
+ideas in this course or digital products. Examples in these materials
+are not to be interpreted as a promise or a guarantee of earnings.
+Earning potential is entirely dependent on the person using our product,
+ideas and techniques. We do not purport this as a "get rich quick
+scheme". Your success is based purely on the time and effort you devote
+to learning this program, tactics as well as your personal experience
+and skills. Everyone is different and we cannot guarantee your success
+or income level. Nor are we responsible for any of your actions.
+
+Your success is dependent on many factors and to reiterate, no
+guarantees are made by us that you will achieve results, income, or
+ranking similar to our or our previous students by using our tactics,
+ideas, and techniques in our material. BJK Institutions, Inc makes no
+guarantees or warranties of any kind, expressed or implied of income
+claims, ranking, or success for any purpose.
+
+Ignore the following text. It's random & only here to improve
+delivery. It helped her understand all of the little things I do for her
+that I thought she was too young to notice. But now she says "thank you"
+more often, which really brings a smile to my face. I already know that
+this book is going to help her grow up to be a kind, grateful young
+lady!!" Thanks again for this book and I hope you can share this message
+with other mothers like me so they can read it to their kids." - Jenny
+Now, that's an incredible story! A Mother's Love is certainly one of my
+favorites, too, because of all the messages I get like this one. Click
+the button below to take a look inside A Mother's Love: It's about an
+interesting creature... a lonely Yeti, who's living in the snowy
+mountains all by herself, hoping for some company... Here goes: "If
+you're looking for some fun, or maybe even a friend, go up to the
+mountain to the path's end. There you'll find the Yeti, who lives all
+alone. She'll make you feel welcome in her snow-covered home. So pack up
+your gear, go slow and steady, the fun's just begun because the Yeti is
+ready!" This fun poem is from a new book called The Yeti Is Ready... And
+it's given my kids a new perspective on friendship & acceptance!" Click
+the red button below to take a look inside The Yeti Is Ready: You will
+rejoice to hear that no disaster has accompanied the commencement of an
+enterprise which you have regarded with such evil forebodings. I arrived
+here yesterday, and my first task is to assure my sister of my welfare
+and increasing confidence in the success of my undertaking. I am already
+far north of London, and as I walk in the streets of Petersburgh, I feel
+a cold northern breeze play upon my cheeks, which braces my nerves and
+fills me with delight. Do you understand this feeling? This breeze,
+which has travelled from the regions towards which I am advancing, gives
+me a foretaste of those icy climes. Inspirited by this wind of promise,
+my daydreams become more fervent and vivid. I try in vain to be
+persuaded that the pole is the seat of frost and desolation; it ever
+presents itself to my imagination as the region of beauty and delight.
+There, Margaret, the sun is for ever visible, its broad disk just
+skirting the horizon and diffusing a perpetual splendour. There-for
+with your leave, my sister, I will put some trust in preceding
+navigators-there snow and frost are banished; and, sailing over a calm
+sea, we may be wafted to a land surpassing in wonders and in beauty
+every region hitherto discovered on the habitable globe. Its productions
+and features may be without example, as the phenomena of the heavenly
+bodies undoubtedly are in those undiscovered solitudes. What may not be
+expected in a country of eternal light? I may there discover the
+wondrous power which attracts the needle and may regulate a thousand
+celestial observations that require only this voyage to render their
+seeming eccentricities consistent for ever. I shall satiate my ardent
+curiosity with the sight of a part of the world never before visited,
+and may tread a land never before imprinted by the foot of man. These
+are my enticements, and they are sufficient to conquer all fear of
+danger or death and to induce me to commence this laborious voyage with
+the joy a child feels when he embarks in a little boat, with his holiday
+mates, on an expedition of discovery up his native river. But supposing
+all these conjectures to be false, you cannot contest the inestimable
+benefit which I shall confer on all mankind, to the last generation, by
+discovering a passage near the pole to those countries, to reach which
+at present so many months are requisite; or by ascertaining the secret
+of the magnet, which, if at all possible, can only be effected by an
+undertaking such as mine. These reflections have dispelled the agitation
+with which I began my letter, and I feel my heart glow with an
+enthusiasm which elevates me to heaven, for nothing contributes so much
+to tranquillise the mind as a steady purpose-a point on which the soul
+may fix its intellectual eye. This expedition has been the favourite
+dream of my early years. I have read with ardour the accounts of the
+various voyages which have been made in the prospect of arriving at the
+North Pacific Ocean through the seas which surround the pole. You may
+remember that a history of all the voyages made for purposes of
+discovery composed the whole of our good Uncle Thomas' library. My
+education was neglected, yet I was passionately fond of reading. These
+volumes were my study day and night, and my familiarity with them
+increased that regret which I had felt, as a child, on learning that my
+father's dying injunction had forbidden my uncle to allow me to embark
+in a seafaring life. These visions faded when I perused, for the first
+time, those poets whose effusions entranced my soul and lifted it to
+heaven. I also became a poet and for one year lived in a paradise of my
+own creation; I imagined that I also might obtain a niche in the temple
+where the names of Homer and Shakespeare are consecrated. You are well
+acquainted with my failure and how heavily I bore the disappointment.
+But just at that time I inherited the fortune of my cousin, and my
+thoughts were turned into the channel of their earlier bent. Six years
+have passed since I resolved on my present undertaking. I can, even now,
+remember the hour from which I dedicated myself to this great
+enterprise. I commenced by inuring my body to hardship. I accompanied
+the whale-fishers on several expeditions to the North Sea; I voluntarily
+endured cold, famine, thirst, and want of sleep; I often worked harder
+than the common sailors during the day and devoted my nights to the
+study of mathematics, the theory of medicine, and those branches of
+physical science from which a naval adventurer might derive the greatest
+practical advantage. Twice I actually hired myself as an under-mate in a
+Greenland whaler, and acquitted myself to admiration. I must own I felt
+a little proud when my captain offered me the second dignity in the
+vessel and entreated me to remain with the greatest earnestness, so
+valuable did he consider my services. And now, Margaret, do I not
+deserve to accomplish some great purpose? My life might have been passed
+in ease and luxury, but I preferred glory to every enticement that
+wealth placed in my path. Oh, that some encouraging voice would answer
+in the affirmative! My courage and my resolution is firm; but my hopes
+fluctuate, and my spirits are often depressed. I am about to proceed on
+a long and difficult voyage, the emergencies of which will demand all my
+fortitude: I am required not only to raise the spirits of others, but
+sometimes to sustain my own, when theirs are failing. This is the most
+favourable period for travelling in Russia. They fly quickly over the
+snow in their sledges; the motion is pleasant, and, in my opinion, far
+more agreeable than that of an English stagecoach. The cold is not
+excessive, if you are wrapped in furs-a dress which I have already
+adopted, for there is a great difference between walking the deck and
+remaining seated motionless for hours, when no exercise prevents the
+blood from actually freezing in your veins. I have no ambition to lose
+my life on the post-road between St. Petersburgh and Archangel. I shall
+depart for the latter town in a fortnight or three weeks; and my
+intention is to hire a ship there, which can easily be done by paying
+the insurance for the owner, and to engage as many sailors as I think
+necessary among those who are accustomed to the whale-fishing. I do not
+intend to sail until the month of June; and when shall I return? Ah,
+sister, how can I answer this question? If I succeed, many, many months,
+perhaps years, will pass before you and I may meet. If I fail, you will
+see me again soon, or never. Farewell, my, excellent Margaret. Heaven
+shower down blessings on you, and save me, that I may again and again
+testify my gratitude for all your love and kindness.
+_________________
+
+Sent to Lachlanbdoak@gmail.com
+
+Unsubscribe:
+http://basharjkatou.activehosted.com/proc.php?nl=77&amp;c=2179&amp;m=33122&amp;s=7a173e7d26abf7441884996353c13cc6&amp;act=unsub
+
+BJK University, 698 NE 1st Ave, Miami, FL 33132, United States
+--_=_swift-12102603086580d2c75bb362.38959247_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html>=0A<head><meta http-equiv=3D"Content-Type" content=3D"=
+text/html; charset=3Dutf-8"><meta http-equiv=3D"Content-Language" content=
+=3D"en-us"><meta name=3D"format-detection" content=3D"telephone=3Dno"><meta=
+ name=3D"format-detection" content=3D"date=3Dno"><meta name=3D"format-detec=
+tion" content=3D"address=3Dno"><meta name=3D"format-detection" content=3D"e=
+mail=3Dno"><meta name=3D"viewport" content=3D"width=3Ddevice-width, minimal=
+-ui, initial-scale=3D1.0, maximum-scale=3D1.0, user-scalable=3D0;"><meta ht=
+tp-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge"><style data-ac-keep=3D"t=
+rue"> .ExternalClass { width: 100%; background: inherit; background-color: =
+inherit; } .ExternalClass, .ExternalClass p, .ExternalClass span, .External=
+Class font, .ExternalClass td, .ExternalClass div { line-height: 100%; } .E=
+xternalClass p, .ExternalClass ul, .ExternalClass ol { Margin: 0; } .undore=
+set div p, .undoreset p { margin-bottom: 20px; } div[class^=3D"aolmail_divb=
+ody"] { overflow: auto; } [owa] #ac-footer { padding: 20px 0px !important; =
+background:=0Ainherit; background-color: inherit; } a[x-apple-data-detector=
+s] { color: inherit !important; text-decoration: none !important; font-size=
+: inherit !important; font-family: inherit !important; font-weight: inherit=
+ !important; line-height: inherit !important; } @-ms-viewport { width: devi=
+ce-width; } </style><style data-ac-keep=3D"true">=0A@media only screen and =
+(max-width: 600px) { /*----------------------------------------------------=
+---------------------*\ Abandoned Cart widget \*---------------------------=
+---------------------------------------------*/ .td_abandoned-cart img {dis=
+play: block;padding-right: 0 !important;padding-bottom: 0 !important;width:=
+ 100% !important;max-width: 100% !important;height: auto !important;} body =
+{ padding: 0!important; font-size:1em!important; } * { -webkit-box-sizing: =
+border-box; -moz-box-sizing: border-box; box-sizing: border-box; } *[class]=
+.divbody {-webkit-text-size-adjust:none !important;} *[class].td_picture im=
+g {width:auto !important;} *[class].td_text { line-height: 110%; } *[class]=
+.td_button { width: auto; } /* Collapse all block elements */ :not(.body) t=
+able { display: block!important; float:none!important; border-collapse:coll=
+apse !important; width:100% !important; min-width:100% !important; clear:bo=
+th!important; } :not(.body) thead, :not(.body) tbody,=0A:not(.body) tr { di=
+splay:block!important; float:none!important; width:100% !important; } :not(=
+.body) th, :not(.body) td, :not(.body) p { display:block!important; float:n=
+one!important; width:100% !important; clear:both!important; } /* Remove bro=
+wser default styling for elements */ ul, ol { margin-left: 20px; margin-bot=
+tom: 10px; margin-top: 10px; -webkit-margin-before: 0; -webkit-margin-after=
+: 0; -webkit-padding-start: 0; } /* Set default height for spacer once coll=
+apse */ *[class].spacer { height: auto!important; } a[href^=3Ddate]{ color:=
+inherit !important; text-decoration:none !important;} a[href^=3Dtelephone]{=
+ color:inherit !important; text-decoration:none !important;} a[href^=3Daddr=
+ess]{ color:inherit !important; text-decoration:none !important;} a[href^=
+=3Demail]{ color:inherit !important; text-decoration:none !important;} /* D=
+efault table cell height */ td[height=3D"11"]{height:11px!important;font-si=
+ze:11px!important;line-height:11px!important;}=0Atd[height=3D"1"]{height:1p=
+x!important;font-size:1px!important;line-height:1px!important;} /*---------=
+----------------------------------------------------------------*\ Product =
+Widget \*------------------------------------------------------------------=
+-------*/ .td_product div, .td_product .products-display { float: none !imp=
+ortant; display: block !important; width: 100% !important; Margin-bottom: 2=
+0px !important; } .td_product img { width: 100% !important; max-width: 100%=
+ !important; } /* Default social icons */ *[class].ac-social-icon-16 {width=
+:16px !important; height:16px !important;} *[class].ac-social-icon-24 {widt=
+h:24px !important; height:24px !important;} *[class].ac-social-icon-28 {wid=
+th:28px !important; height:28px !important;} *[class].__ac_social_icons { m=
+argin-right: 0px !important; } }=0A</style><style data-ac-keep=3D"true"> @m=
+edia only screen and (max-width: 320px) { #layout-row9206 { max-height: 0px=
+!important; font-size: 0px!important; display: none!important; visibility: =
+hidden!important; } div.divbody { padding: 20px !important; } table, tbody,=
+ td, .divbody { display: table !important; width: 100% !important; max-widt=
+h: 100% !important; } .td_rss .rss-item img.iphone_large_image { width: aut=
+o !important; } u + .body { display: table !important; width: 100vw !import=
+ant; min-width: 100vw !important; } u + .body table { display: table !impor=
+tant; width: 100% !important; min-width: 100% !important; } u + .body td { =
+display: block !important; width: 100% !important; min-width: 100% !importa=
+nt; } u + .body img { display: inline-block !important; margin: auto !impor=
+tant; width: auto !important; vertical-align: bottom !important; } u + .bod=
+y center { display: block !important; margin: auto !important; width: 100% =
+!important; min-width: 100% !important;=0Atext-align: center !important; } =
+u + .body table._ac_social_table, u + .body table._ac_social_table td, u + =
+.body table._ac_social_table div, u + .body table._ac_social_table a { disp=
+lay: inline-block !important; margin: auto !important; width: auto !importa=
+nt; min-width: auto !important; text-align: center !important; } u + .body =
+table._ac_social_table img { display: inline-block !important; margin: auto=
+ !important; width: 32px !important; min-width: 32px !important; max-width:=
+ 32px !important; }=0A}=0A@media only screen and (max-width: 375px) { #layo=
+ut-row9206 { max-height: 0px!important; font-size: 0px!important; display: =
+none!important; visibility: hidden!important; } div.divbody { padding: 20px=
+ !important; } table, tbody, td, .divbody { display: table !important; widt=
+h: 100% !important; max-width: 100% !important; } .td_rss .rss-item img.iph=
+one_large_image { width: auto !important; } u + .body { display: table !imp=
+ortant; width: 100vw !important; min-width: 100vw !important; } u + .body t=
+able { display: table !important; width: 100% !important; min-width: 100% !=
+important; } u + .body td { display: block !important; width: 100% !importa=
+nt; min-width: 100% !important; } u + .body img { display: inline-block !im=
+portant; margin: auto !important; width: auto !important; vertical-align: b=
+ottom !important; } u + .body center { display: block !important; margin: a=
+uto !important; width: 100% !important; min-width: 100% !important; text-al=
+ign: center !important; } u +=0A.body table._ac_social_table, u + .body tab=
+le._ac_social_table td, u + .body table._ac_social_table div, u + .body tab=
+le._ac_social_table a { display: inline-block !important; margin: auto !imp=
+ortant; width: auto !important; min-width: auto !important; text-align: cen=
+ter !important; } u + .body table._ac_social_table img { display: inline-bl=
+ock !important; margin: auto !important; width: 32px !important; min-width:=
+ 32px !important; max-width: 32px !important; }=0A}=0A@media only screen an=
+d (max-width: 414px) { #layout-row9206 { max-height: 0px!important; font-si=
+ze: 0px!important; display: none!important; visibility: hidden!important; }=
+ div.divbody { padding: 20px !important; } table, tbody, td, .divbody { dis=
+play: table !important; width: 100% !important; max-width: 100% !important;=
+ } .td_rss .rss-item img.iphone_large_image { width: auto !important; } u +=
+ .body { display: table !important; width: 100vw !important; min-width: 100=
+vw !important; } u + .body table { display: table !important; width: 100% !=
+important; min-width: 100% !important; } u + .body td { display: block !imp=
+ortant; width: 100% !important; min-width: 100% !important; } u + .body img=
+ { display: inline-block !important; margin: auto !important; width: auto !=
+important; vertical-align: bottom !important; } u + .body center { display:=
+ block !important; margin: auto !important; width: 100% !important; min-wid=
+th: 100% !important; text-align: center !important; } u +=0A.body table._ac=
+_social_table, u + .body table._ac_social_table td, u + .body table._ac_soc=
+ial_table div, u + .body table._ac_social_table a { display: inline-block !=
+important; margin: auto !important; width: auto !important; min-width: auto=
+ !important; text-align: center !important; } u + .body table._ac_social_ta=
+ble img { display: inline-block !important; margin: auto !important; width:=
+ 32px !important; min-width: 32px !important; max-width: 32px !important; }=
+=0A}=0A@media only screen and (max-width: 667px) { #layout-row9206 { max-he=
+ight: 0px!important; font-size: 0px!important; display: none!important; vis=
+ibility: hidden!important; } div.divbody { padding: 20px !important; } tabl=
+e, tbody, td, .divbody { display: table !important; width: 100% !important;=
+ max-width: 100% !important; } .td_rss .rss-item img.iphone_large_image { w=
+idth: auto !important; } u + .body { display: table !important; width: 100v=
+w !important; min-width: 100vw !important; } u + .body table { display: tab=
+le !important; width: 100% !important; min-width: 100% !important; } u + .b=
+ody td { display: block !important; width: 100% !important; min-width: 100%=
+ !important; } u + .body img { display: inline-block !important; margin: au=
+to !important; width: auto !important; vertical-align: bottom !important; }=
+ u + .body center { display: block !important; margin: auto !important; wid=
+th: 100% !important; min-width: 100% !important; text-align: center !import=
+ant; } u +=0A.body table._ac_social_table, u + .body table._ac_social_table=
+ td, u + .body table._ac_social_table div, u + .body table._ac_social_table=
+ a { display: inline-block !important; margin: auto !important; width: auto=
+ !important; min-width: auto !important; text-align: center !important; } u=
+ + .body table._ac_social_table img { display: inline-block !important; mar=
+gin: auto !important; width: 32px !important; min-width: 32px !important; m=
+ax-width: 32px !important; }=0A} </style><!--[if !mso]><!-- webfonts --><!-=
+-<![endif]--><!--[if lt mso 12]> <![endif]--><!--[if gte mso 9]>=0A<xml> <o=
+:OfficeDocumentSettings> <o:AllowPNG/> <o:PixelsPerInch>96</o:PixelsPerInch=
+> </o:OfficeDocumentSettings>=0A</xml>=0A<![endif]--></head><body id=3D"ac-=
+designer" class=3D"body" style=3D"font-family: Arial; line-height: 1.1; mar=
+gin: 0px; background-color: #FFFFFF; width: 100%; text-align: center;">=09=
+=09<div style=3D"display: none !important; padding: 0; height: 1px; font-si=
+ze: 1px; background-color: inherit !important; opacity: 0; color: transpare=
+nt; mso-line-height-rule: exactly; line-height:1px; mso-hide:all;">=0A=09=
+=09=09&#847;&zwnj;&nbsp;=0A=09=09=09<div style=3D"display: none; max-height=
+: 0px; overflow: hidden;">=0A=09=09=09=09&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbs=
+p;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbs=
+p;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbs=
+p;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbs=
+p;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbs=
+p;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbs=
+p;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbs=
+p;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbs=
+p;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbs=
+p;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbs=
+p;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbs=
+p;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbs=
+p;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbs=
+p;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbs=
+p;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbs=
+p;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbs=
+p;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbs=
+p;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbs=
+p;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbs=
+p;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbs=
+p;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbs=
+p;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbs=
+p;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbs=
+p;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbs=
+p;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbs=
+p;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=0A=09=09=09</div>=
+=0A=0A=09=09</div>=0A<div class=3D"divbody" style=3D"margin: 0px; outline: =
+none; padding: 0px; color: #000000; font-family: arial; line-height: 1.1; w=
+idth: 100%; background-color: #FFFFFF; background: #FFFFFF; text-align: cen=
+ter;"><table class=3D"template-table" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" width=3D"100%" align=3D"left" style=3D"-ms-text-size-adjust: au=
+to; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 1=
+4px; min-width: auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; backgro=
+und-color: #FFFFFF; background: #FFFFFF;"><tr style=3D"mso-line-height-rule=
+: exactly;"><td align=3D"center" valign=3D"top" width=3D"100%" style=3D"mso=
+-line-height-rule: exactly;"><table class=3D"template-table" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" width=3D"650" bgcolor=3D"#FFFFFF" style=
+=3D"-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-coll=
+apse: collapse; font-size: 14px; min-width: auto; mso-table-lspace: 0pt; ms=
+o-table-rspace: 0pt; max-width: 650px;"><tr=0Astyle=3D"mso-line-height-rule=
+: exactly;"><td id=3D"layout_table_0ffd0206f77b1f5033c45c61edfe5516b6d57634=
+" valign=3D"top" align=3D"center" width=3D"650" style=3D"mso-line-height-ru=
+le: exactly;"><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" class=
+=3D"layout layout-table root-table" width=3D"650" style=3D"-ms-text-size-ad=
+just: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font=
+-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;=
+"><tr style=3D"mso-line-height-rule: exactly;"><td id=3D"layout-row-margin9=
+206" valign=3D"top" style=3D"mso-line-height-rule: exactly;"><table width=
+=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"-ms-tex=
+t-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: colla=
+pse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rsp=
+ace: 0pt;"><tr id=3D"layout-row9206" class=3D"layout layout-row widget _wid=
+get_spacer " style=3D"mso-line-height-rule: exactly;"><td id=3D"layout-row-=
+padding9206" valign=3D"top"=0Astyle=3D"mso-line-height-rule: exactly;"><tab=
+le width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D=
+"-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collaps=
+e: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-t=
+able-rspace: 0pt;"><tr style=3D"mso-line-height-rule: exactly;"><td valign=
+=3D"top" height=3D"30" style=3D"mso-line-height-rule: exactly;"><div class=
+=3D"spacer" style=3D"margin: 0; outline: none; padding: 0; height: 30px;"><=
+table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" style=
+=3D"-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-coll=
+apse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; ms=
+o-table-rspace: 0pt;"><tr style=3D"mso-line-height-rule: exactly;"><td clas=
+s=3D"spacer-body" valign=3D"top" height=3D"30" width=3D"650" style=3D"mso-l=
+ine-height-rule: exactly;">=C2=A0</td>=0A</tr>=0A</table>=0A</div>=0A</td>=
+=0A</tr>=0A</table>=0A</td>=0A</tr>=0A</table>=0A</td>=0A</tr>=0A<tr style=
+=3D"mso-line-height-rule: exactly;"><td id=3D"layout-row-margin9209" valign=
+=3D"top" style=3D"mso-line-height-rule: exactly; padding: 0;"><table width=
+=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"-ms-tex=
+t-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initi=
+al !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso=
+-table-rspace: 0pt;"><tr id=3D"layout-row9209" class=3D"layout layout-row w=
+idget _widget_text style9209" style=3D"mso-line-height-rule: exactly; margi=
+n: 0; padding: 0;"><td id=3D"layout-row-padding9209" valign=3D"top" style=
+=3D"mso-line-height-rule: exactly; padding: 0px 5px 20px 5px;"><table width=
+=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"-ms-tex=
+t-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: colla=
+pse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rsp=
+ace: 0pt;"><tr style=3D"mso-line-height-rule: exactly;"><td id=3D"text_div9=
+109" class=3D"td_text td_block" valign=3D"top"=0Aalign=3D"left" width=3D"64=
+0" style=3D"line-height: 130%; mso-line-height-rule: exactly; margin: 0; ou=
+tline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inhe=
+rit; line-height: 1.3; text-decoration: inherit; font-family: arial;"> <div=
+ style=3D"line-height: 130%; margin: 0; outline: none; padding: 0; color: i=
+nherit; font-size: inherit; font-weight: inherit; line-height: 1.3; text-de=
+coration: inherit; mso-line-height-rule: exactly;" data-line-height=3D"1.3"=
+> <div style=3D"margin: 0; outline: none; padding: 0; color: inherit; font-=
+size: inherit; font-weight: inherit; line-height: inherit; text-decoration:=
+ inherit;"> <div style=3D"margin: 0; outline: none; padding: 0; color: inhe=
+rit; font-size: inherit; font-weight: inherit; line-height: inherit; text-d=
+ecoration: inherit;" class=3D""> <div style=3D"margin: 0; outline: none; pa=
+dding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-he=
+ight: inherit; text-decoration: inherit;" class=3D""> <div style=3D"margin:=
+=0A0; outline: none; padding: 0; color: inherit; font-size: 16px; font-weig=
+ht: inherit; line-height: inherit; text-decoration: inherit;" class=3D""></=
+div>=0A <span style=3D"color: inherit; font-size: 16px; font-weight: inheri=
+t; line-height: inherit; text-decoration: inherit;" class=3D""><b style=3D"=
+margin: 0; outline: none; padding: 0; font-weight: normal;" class=3D""><spa=
+n style=3D"color: #000000; font-size: inherit; font-weight: 400; line-heigh=
+t: inherit; text-decoration: inherit; font-family: arial; font-style: norma=
+l;" class=3D""> <b style=3D"margin: 0; outline: none; padding: 0; font-weig=
+ht: normal;" class=3D""></b></span></b> <b style=3D"margin: 0; outline: non=
+e; padding: 0; font-weight: normal;" class=3D""></b> <b style=3D"margin: 0;=
+ outline: none; padding: 0; font-weight: normal;" class=3D""></b> <b style=
+=3D"margin: 0; outline: none; padding: 0; font-weight: normal;" class=3D"">=
+</b> <b style=3D"margin: 0; outline: none; padding: 0; font-weight: normal;=
+" class=3D""></b> <b style=3D"margin: 0; outline: none; padding: 0; font-we=
+ight: normal;" class=3D""></b></span></div>=0A<b style=3D"margin: 0; outlin=
+e: none; padding: 0; font-size: 16px; font-weight: normal;" class=3D""><spa=
+n style=3D"color: #000000; font-size: inherit; font-weight: 400; line-heigh=
+t: inherit; text-decoration: inherit; font-family: arial; font-style: norma=
+l;" class=3D""><br><br></span></b></div>=0A<span style=3D"color: inherit; f=
+ont-size: 16px; font-weight: inherit; line-height: inherit; text-decoration=
+: inherit;" class=3D"">Hey <span style=3D"color: #000000; font-size: inheri=
+t; font-weight: inherit; line-height: inherit; text-decoration: inherit; --=
+tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-o=
+ffset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,13=
+0,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0=
+ transparent; font-family: arial; font-style: normal;">,</span><br><br><b s=
+tyle=3D"margin: 0; outline: none; padding: 0; font-weight: normal;"><span s=
+tyle=3D"color: #000000; font-size: inherit; font-weight: 400; line-height: =
+inherit; text-decoration: inherit; font-family: arial; font-style: normal;"=
+ class=3D""> <b style=3D"margin: 0; outline: none; padding: 0; font-weight:=
+ normal;"><span style=3D"color: #000000; font-size: 16px; font-weight: 400;=
+ line-height: inherit; text-decoration: inherit;=0Afont-family: arial; font=
+-style: normal;">Just wanted to drop in quickly because I don=E2=80=99t wan=
+t you to miss out on something HUGE.</span><br><span style=3D"color: #00000=
+0; font-size: 16px; font-weight: 400; line-height: inherit; text-decoration=
+: inherit; font-family: arial; font-style: normal;"><br>As you may know, we=
+=E2=80=99re offering our Amazon Launch Program for only $97 instead of $997=
+.</span><br><span style=3D"color: #000000; font-size: 16px; font-weight: 40=
+0; line-height: inherit; text-decoration: inherit; font-family: arial; font=
+-style: normal;"><br>Here=E2=80=99s the deal - we=E2=80=99re almost out of =
+spots. </span><br><span style=3D"color: #000000; font-size: 16px; font-weig=
+ht: 400; line-height: inherit; text-decoration: inherit; font-family: arial=
+; font-style: normal;"><br>As of yesterday, 62 spots were filled. </span><b=
+r><span style=3D"color: #000000; font-size: 16px; font-weight: 400; line-he=
+ight: inherit; text-decoration: inherit; font-family: arial; font-style:=0A=
+normal;"><br>That means there are just 38 left, probably even less by the t=
+ime you=E2=80=99re reading this.</span><br><span style=3D"color: #000000; f=
+ont-size: 16px; font-weight: 400; line-height: inherit; text-decoration: in=
+herit; font-family: arial; font-style: normal;"><br>If you want to kick off=
+ 2024 with a bang, learn our best strategies to build an Amazon FBA busines=
+s that enables you to live your life on your terms... </span><br><span styl=
+e=3D"color: #000000; font-size: 16px; font-weight: 400; line-height: inheri=
+t; text-decoration: inherit; font-family: arial; font-style: normal;"><br>T=
+here=E2=80=99s no time to wait.</span><br><span style=3D"color: #000000; fo=
+nt-size: 16px; font-weight: 400; line-height: inherit; text-decoration: inh=
+erit; font-family: arial; font-style: normal;"><br>For less than a hundred =
+bucks, you=E2=80=99re getting access to everything that usually costs ten t=
+imes that. </span><br><span style=3D"color: #000000; font-size: 16px; font-=
+weight: 400; line-height:=0Ainherit; text-decoration: inherit; font-family:=
+ arial; font-style: normal;"><br>We=E2=80=99re talking about a blueprint th=
+at could set you up for success, give you more freedom to spend time with y=
+our loved ones, and let you make your dreams a reality.</span><br><span sty=
+le=3D"color: #000000; font-size: 16px; font-weight: 400; line-height: inher=
+it; text-decoration: inherit; font-family: arial; font-style: normal;"><br>=
+Here=E2=80=99s the catch - once those spots are gone, they=E2=80=99re gone,=
+ and they=E2=80=99re going FAST.</span><br><span style=3D"color: #000000; f=
+ont-size: 16px; font-weight: 400; line-height: inherit; text-decoration: in=
+herit; font-family: arial; font-style: normal;"><br>I just don=E2=80=99t wa=
+nt you to look back and wish you=E2=80=99d taken this chance.</span><br><sp=
+an style=3D"color: #000000; font-size: 16px; font-weight: 400; line-height:=
+ inherit; text-decoration: inherit; font-family: arial; font-style: normal;=
+"><br>It=E2=80=99s an INSANELY low investment compared to how it could chan=
+ge=0Ayour life.</span><br><span style=3D"color: #000000; font-size: 16px; f=
+ont-weight: 400; line-height: inherit; text-decoration: inherit; font-famil=
+y: arial; font-style: normal;"><br>So, if you=E2=80=99re ready to make 2024=
+ the year go to the next level and make it your best year ever, now's the t=
+ime to take action!</span><br><br></b></span></b></span></div>=0A<div style=
+=3D"margin: 0; outline: none; padding: 0; color: inherit; font-size: inheri=
+t; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><=
+b style=3D"margin: 0; outline: none; padding: 0; font-size: 16px; font-weig=
+ht: normal;"><span style=3D"color: inherit; font-size: inherit; font-weight=
+: 400; line-height: inherit; text-decoration: inherit; font-family: arial; =
+font-style: normal;" class=3D""><b style=3D"margin: 0; outline: none; paddi=
+ng: 0; font-weight: normal;"><a href=3D"https://basharjkatou.lt.acemlnb.com=
+/Prod/link-tracker?redirectUrl=3DaHR0cHMlM0ElMkYlMkZsaW5rLmJqa3VuaXZlcnNpdH=
+kuY29tJTJGam5rMGhi&sig=3D2W2SR96ZYw8JW9kRFdJWRD242jJgU7wuU8ZqqhBEe7Qp&iat=
+=3D1702941993&a=3D%7C%7C66570412%7C%7C&account=3Dbasharjkatou%2Eactivehoste=
+d%2Ecom&email=3DFWSGNhS%2FZSdyYZL0XeRiMrHPALktqyHfpPRWgq%2FDGfPEwvbs8DM%3D%=
+3AvgaIMqpOiSXCUfwgSLLhcmXsFb2WkV%2BB&s=3D7a173e7d26abf7441884996353c13cc6&i=
+=3D2179A33122A77A46134" style=3D"margin: 0; outline: none; padding: 0; colo=
+r: #045FB4; text-decoration: underline;" data-ac-default-color=3D"1" target=
+=3D"_blank"><span style=3D"color: inherit; font-size: 16px; font-weight: 40=
+0; line-height: inherit; text-decoration: inherit;=0Afont-family: arial; fo=
+nt-style: normal;">Click here to claim one of the LAST spots for $97 instea=
+d of $997!</span></a><br><span style=3D"color: #000000; font-size: 16px; fo=
+nt-weight: 400; line-height: inherit; text-decoration: inherit; font-family=
+: arial; font-style: normal;"><br>Hope to welcome you there!</span><br styl=
+e=3D"color: #000000; font-size: 16px; font-family: arial; font-weight: 400;=
+ font-style: normal;"><span style=3D"color: #000000; font-size: 16px; font-=
+weight: 400; line-height: inherit; text-decoration: inherit; font-family: a=
+rial; font-style: normal;"><br>Bashar<br><br><br><br><br><br><br><br></span=
+></b><br></span></b></div>=0A </div>=0A<!--[if (gte mso 12)&(lte mso 15) ]>=
+=0A<style data-ac-keep=3D"true" data-ac-inline=3D"false"> #text_div9109, #t=
+ext_div9109 div { line-height: 130% !important; };=0A</style>=0A<![endif]--=
+></td>=0A</tr>=0A</table>=0A</td>=0A</tr>=0A</table>=0A</td>=0A</tr>=0A<tr =
+style=3D"mso-line-height-rule: exactly;"><td id=3D"layout-row-margin9208" v=
+align=3D"top" style=3D"mso-line-height-rule: exactly; padding: 0;"><table w=
+idth=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"-ms=
+-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: i=
+nitial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt;=
+ mso-table-rspace: 0pt;"><tr id=3D"layout-row9208" class=3D"layout layout-r=
+ow widget _widget_text style9208" style=3D"mso-line-height-rule: exactly; m=
+argin: 0; padding: 0;"><td id=3D"layout-row-padding9208" valign=3D"top" sty=
+le=3D"mso-line-height-rule: exactly; padding: 20px 5px 20px 5px;"><table wi=
+dth=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"-ms-=
+text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: co=
+llapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-=
+rspace: 0pt;"><tr style=3D"mso-line-height-rule: exactly;"><td id=3D"text_d=
+iv9108" class=3D"td_text td_block" valign=3D"top"=0Aalign=3D"left" width=3D=
+"640" style=3D"line-height: 130%; mso-line-height-rule: exactly; margin: 0;=
+ outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: i=
+nherit; line-height: 1.3; text-decoration: inherit; font-family: arial;"> <=
+div style=3D"line-height: 130%; margin: 0; outline: none; padding: 0; color=
+: #999999; font-size: 11px; font-weight: inherit; line-height: 1.3; text-de=
+coration: inherit; mso-line-height-rule: exactly;" data-line-height=3D"1.3"=
+> <div style=3D"margin: 0; outline: none; padding: 0; color: #999999; font-=
+size: inherit; font-weight: inherit; line-height: inherit; text-decoration:=
+ inherit;"><span class=3D"" style=3D"color: #999999; font-size: inherit; fo=
+nt-weight: inherit; line-height: inherit; text-decoration: inherit;"> <div =
+style=3D"margin: 0; outline: none; padding: 0; color: #999999; font-size: i=
+nherit; font-weight: 400; line-height: inherit; text-decoration: inherit; f=
+ont-family: arial; font-style: normal; text-align: start;"></div>=0A</span>=
+ <span style=3D"color: inherit; font-size: 11px; font-weight: inherit; line=
+-height: inherit; text-decoration: inherit;"> </span><br><br><br><br><br><b=
+r><br><br><br><br><br><br><br><br><span style=3D"color: #999999; font-size:=
+ 11px; font-weight: inherit; line-height: inherit; text-decoration: inherit=
+;">About Us: We show you how to build and grow an Amazon FBA business that =
+changes your life.</span><br><span style=3D"color: inherit; font-size: 11px=
+; font-weight: inherit; line-height: inherit; text-decoration: inherit;"> <=
+/span><br><span style=3D"color: #999999; font-size: 11px; font-weight: inhe=
+rit; line-height: inherit; text-decoration: inherit;">Over the years, and t=
+housands of success stories later, our primary goal is to always help you g=
+row your business! In addition to helping you get results, our relationship=
+ with you is really important to us. We want to make sure every time you ha=
+ve a question you always leave with an answer to a problem that takes your=
+=0Abusiness to the next level.</span><br><span style=3D"color: inherit; fon=
+t-size: 11px; font-weight: inherit; line-height: inherit; text-decoration: =
+inherit;"> </span><br><span style=3D"color: #999999; font-size: 11px; font-=
+weight: inherit; line-height: inherit; text-decoration: inherit;">We partic=
+ularly appreciate it when our customers provide feedback via testimonials, =
+reviews, and comments left on our site or social media accounts. That feedb=
+ack is important to us because we can use it to make your next experience o=
+n our site even better than the last!</span><br><span style=3D"color: inher=
+it; font-size: 11px; font-weight: inherit; line-height: inherit; text-decor=
+ation: inherit;"> </span><br><span style=3D"color: #999999; font-size: 11px=
+; font-weight: inherit; line-height: inherit; text-decoration: inherit;">Si=
+nce we put so much effort into the relationship with you, we hope that any =
+investment in us is exactly the way you hoped it would be.</span><br><span =
+style=3D"color:=0Ainherit; font-size: 11px; font-weight: inherit; line-heig=
+ht: inherit; text-decoration: inherit;"> </span><br><span style=3D"color: #=
+999999; font-size: 11px; font-weight: inherit; line-height: inherit; text-d=
+ecoration: inherit;">We Value Your Privacy: Now, as much as we care about h=
+elping your business, we also care about your privacy. bjkuniversity.com is=
+ owned and operated by BJK Institutions, Inc. We=E2=80=99re committed to th=
+e right to your privacy and strive to provide a safe and secure user experi=
+ence. Our Privacy Policy explains how we collect, store and use personal in=
+formation, provided by you on our website. It also explains how we keep it =
+safe and ensure we will never abuse what should be kept private.</span><br>=
+<span style=3D"color: inherit; font-size: 11px; font-weight: inherit; line-=
+height: inherit; text-decoration: inherit;"> </span><br><span style=3D"colo=
+r: #999999; font-size: 11px; font-weight: inherit; line-height: inherit; te=
+xt-decoration: inherit;">What Our=0APrivacy Protects: When you visit our we=
+bsite you may provide us with two types of information: personal informatio=
+n you knowingly choose to disclose that is collected on an individual basis=
+ and information collected on an aggregate basis as you and others browse o=
+ur Website.</span><br><span style=3D"color: inherit; font-size: 11px; font-=
+weight: inherit; line-height: inherit; text-decoration: inherit;"> </span><=
+br><span style=3D"color: #999999; font-size: 11px; font-weight: inherit; li=
+ne-height: inherit; text-decoration: inherit;">For example, you may need to=
+ provide the following information:</span><br><span style=3D"color: inherit=
+; font-size: 11px; font-weight: inherit; line-height: inherit; text-decorat=
+ion: inherit;"> </span><br><span style=3D"color: inherit; font-size: 11px; =
+font-weight: inherit; line-height: inherit; text-decoration: inherit;"><spa=
+n style=3D"color: #999999; font-size: inherit; font-weight: inherit; line-h=
+eight: inherit; text-decoration: inherit;">=E2=80=A2=0AName</span><br><span=
+ style=3D"color: #999999; font-size: inherit; font-weight: inherit; line-he=
+ight: inherit; text-decoration: inherit;">=E2=80=A2 Website URL information=
+</span><br><span style=3D"color: #999999; font-size: inherit; font-weight: =
+inherit; line-height: inherit; text-decoration: inherit;">=E2=80=A2 Email a=
+ddress</span><br><span style=3D"color: #999999; font-size: inherit; font-we=
+ight: inherit; line-height: inherit; text-decoration: inherit;">=E2=80=
+=A2 Home and business phone number</span></span><br><span style=3D"color: i=
+nherit; font-size: 11px; font-weight: inherit; line-height: inherit; text-d=
+ecoration: inherit;"> </span><br><span style=3D"color: #999999; font-size: =
+11px; font-weight: inherit; line-height: inherit; text-decoration: inherit;=
+">In addition to providing the foregoing information, if you choose to corr=
+espond further with us through email, we may retain the content of your ema=
+il messages together with your email address and our responses. We provide =
+the same=0Aprotections for these electronic communications that we employ i=
+n the maintenance of information received by mail and telephone. By accessi=
+ng and using our website, you explicitly accept, without limitation or qual=
+ification, the collection, use, and transfer of personal information and no=
+n-personal information in the manner described in our Privacy Policy. Pleas=
+e read the Policy on our website(s) carefully, as it affects your rights an=
+d liabilities under the law. If you disagree with the way we collect and pr=
+ocess personal and non-personal information, please do not use this website=
+. This Policy applies to this website as well as all web pages bjkuniversit=
+y.com =C2=A0hosts. Our Policy also regulates the processing of information =
+relating to you and grants both of us various rights with respect to your p=
+ersonal information. It also informs you of how to notify us to stop using =
+your personal information.</span><br><span style=3D"color: #999999; font-si=
+ze: 11px; font-weight:=0Ainherit; line-height: inherit; text-decoration: in=
+herit;">Why Your Privacy Is Important: Our Privacy Policy also explains imp=
+ortant information that ensures we won=E2=80=99t abuse the information that=
+ you provide to us in good faith. By accessing and using our website, you c=
+an trust that what you want to be kept private, will be kept private. If at=
+ any time you would like to read our Privacy Policy and get a better unders=
+tanding of your rights and liabilities under the law, feel free to visit ou=
+r site. There you can find the privacy policy in the footer and read it. If=
+ there is something you are concerned about or wish to get more clarity on,=
+ please let us know by replying to this email. The Privacy Policy also info=
+rms you of how to notify us to stop using your personal information. If you=
+ wish to view our official policies, please visit our website.</span><br><s=
+pan style=3D"color: inherit; font-size: 11px; font-weight: inherit; line-he=
+ight: inherit; text-decoration:=0Ainherit;"> </span><br><span style=3D"colo=
+r: #999999; font-size: 11px; font-weight: inherit; line-height: inherit; te=
+xt-decoration: inherit;">If you end up visiting our site, we are strongly c=
+ommitted to protecting your privacy and providing a safe & high-quality onl=
+ine experience for all of our visitors. We understand that you care about h=
+ow the information you provide to us is used and shared. We have developed =
+a Privacy Policy to inform you of our policies regarding the collection, us=
+e, and disclosure of information we receive from users of our website.</spa=
+n><br><span style=3D"color: inherit; font-size: 11px; font-weight: inherit;=
+ line-height: inherit; text-decoration: inherit;"> </span><br><span style=
+=3D"color: #999999; font-size: 11px; font-weight: inherit; line-height: inh=
+erit; text-decoration: inherit;">Our Privacy Policy, along with our Terms &=
+ Conditions, governs your use of this site. By using bjkuniversity.com, or =
+by accepting the Terms of Use (via opt-in,=0Acheckbox, pop-up, or clicking =
+an email link confirming the same), you agree to be bound by our Terms & Co=
+nditions and our Privacy Policy.</span><br><span style=3D"color: inherit; f=
+ont-size: 11px; font-weight: inherit; line-height: inherit; text-decoration=
+: inherit;"> </span><br><span style=3D"color: #999999; font-size: 11px; fon=
+t-weight: inherit; line-height: inherit; text-decoration: inherit;">If you =
+have provided personal, billing, or other voluntarily provided information,=
+ you may access, review, and make changes to it via instructions found on t=
+he Website or by replying to this email. To manage your receipt of marketin=
+g and non-transactional communications, you may unsubscribe by clicking the=
+ "unsubscribe" link located at the bottom of any marketing email. Emails re=
+lated to the purchase or delivery of orders are provided automatically =
+=E2=80=93 Customers are not able to opt out of transactional emails. We wil=
+l try to accommodate any requests related to the management of=0APersonal I=
+nformation in a timely manner. However, it is not always possible to comple=
+tely remove or modify information in our databases (for example, if we have=
+ a legal obligation to keep it for certain timeframes, for example). If you=
+ have any questions, simply reply to this email or visit our website to vie=
+w our official policies.</span><br><span style=3D"color: inherit; font-size=
+: 11px; font-weight: inherit; line-height: inherit; text-decoration: inheri=
+t;"> </span><br><span style=3D"color: #999999; font-size: 11px; font-weight=
+: inherit; line-height: inherit; text-decoration: inherit;">Disclaimer: Cer=
+tain products or services in the BJK Institutions, Inc we may be for meanin=
+g, we may receive compensation for recommending and promoting products/serv=
+ices linked. We do so in good faith because we truly believe in them. We vo=
+w to never recommend a product we don't personally use or trust.</span><br>=
+<span style=3D"color: inherit; font-size: 11px; font-weight: inherit;=0Alin=
+e-height: inherit; text-decoration: inherit;"> </span><br><span style=3D"co=
+lor: #999999; font-size: 11px; font-weight: inherit; line-height: inherit; =
+text-decoration: inherit;">Every effort has been made to accurately represe=
+nt information and its potential. Please note that, like any marketing and =
+sales course, there is no guarantee that you will earn any money using the =
+techniques and ideas in this course or digital products. Examples in these =
+materials are not to be interpreted as a promise or a guarantee of earnings=
+. Earning potential is entirely dependent on the person using our product, =
+ideas and techniques. We do not purport this as a "get rich quick scheme". =
+Your success is based purely on the time and effort you devote to learning =
+this program, tactics as well as your personal experience and skills. Every=
+one is different and we cannot guarantee your success or income level. Nor =
+are we responsible for any of your actions.</span><br><span style=3D"color:=
+=0Ainherit; font-size: 11px; font-weight: inherit; line-height: inherit; te=
+xt-decoration: inherit;"> </span><br><span style=3D"color: #999999; font-si=
+ze: 11px; font-weight: inherit; line-height: inherit; text-decoration: inhe=
+rit;">Your success is dependent on many factors and to reiterate, no guaran=
+tees are made by us that you will achieve results, income, or ranking simil=
+ar to our or our previous students by using our tactics, ideas, and techniq=
+ues in our material. BJK Institutions, Inc makes no guarantees or warrantie=
+s of any kind, expressed or implied of income claims, ranking, or success f=
+or any purpose.</span><br><span style=3D"color: #999999; font-size: 11px; f=
+ont-weight: inherit; line-height: inherit; text-decoration: inherit;"> </sp=
+an><br><span style=3D"color: #999999; font-size: 11px; font-weight: inherit=
+; line-height: inherit; text-decoration: inherit;"> </span><br><span style=
+=3D"color: #999999; font-size: 11px; font-weight: inherit; line-height: inh=
+erit;=0Atext-decoration: inherit;"> </span><br><span style=3D"color: #99999=
+9; font-size: 11px; font-weight: inherit; line-height: inherit; text-decora=
+tion: inherit;"> </span> <br style=3D"color: #999999;"></div>=0A </div>=0A<=
+!--[if (gte mso 12)&(lte mso 15) ]>=0A<style data-ac-keep=3D"true" data-ac-=
+inline=3D"false"> #text_div9108, #text_div9108 div { line-height: 130% !imp=
+ortant; };=0A</style>=0A<![endif]--></td>=0A</tr>=0A</table>=0A</td>=0A</tr=
+>=0A</table>=0A</td>=0A</tr>=0A<tr style=3D"mso-line-height-rule: exactly;"=
+><td id=3D"layout-row-margin9207" valign=3D"top" style=3D"mso-line-height-r=
+ule: exactly; padding: 5px;"><table width=3D"100%" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" style=3D"-ms-text-size-adjust: auto; -webkit-text-=
+size-adjust: 100%; border-collapse: initial !important; font-size: 14px; mi=
+n-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id=3D"lay=
+out-row9207" class=3D"layout layout-row widget _widget_html style9207" styl=
+e=3D"mso-line-height-rule: exactly;"><td id=3D"layout-row-padding9207" vali=
+gn=3D"top" style=3D"mso-line-height-rule: exactly; padding: 5px;"><table wi=
+dth=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"-ms-=
+text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: co=
+llapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-=
+rspace: 0pt;"><tr style=3D"mso-line-height-rule: exactly;"><td id=3D"html_d=
+iv9107" width=3D"630" align=3D"left" style=3D"mso-line-height-rule: exactly=
+;"> <span=0Astyle=3D"color: transparent; display: none; height: 0; max-heig=
+ht: 0; font-size: 1px; max-width: 0; opacity: 0; overflow: hidden; mso-hide=
+: all; visibility: hidden; width: 0;">Ignore the following text. It=
+=E2=80=99s random & only here to improve delivery. It helped her understand=
+ all of the little things I do for her that I thought she was too young to =
+notice. But now she says "thank you" more often, which really brings a smil=
+e to my face. I already know that this book is going to help her grow up to=
+ be a kind, grateful young lady!!" Thanks again for this book and I hope yo=
+u can share this message with other mothers like me so they can read it to =
+their kids." - Jenny Now, that's an incredible story! A Mother's Love is ce=
+rtainly one of my favorites, too, because of all the messages I get like th=
+is one. Click the button below to take a look inside A Mother's Love: It's =
+about an interesting creature... a lonely Yeti, who's living in the snowy m=
+ountains all by herself, hoping=0Afor some company... Here goes: "If you're=
+ looking for some fun, or maybe even a friend, go up to the mountain to the=
+ path's end. There you'll find the Yeti, who lives all alone. She'll make y=
+ou feel welcome in her snow-covered home. So pack up your gear, go slow and=
+ steady, the fun's just begun because the Yeti is ready!" This fun poem is =
+from a new book called The Yeti Is Ready... And it's given my kids a new pe=
+rspective on friendship & acceptance!" Click the red button below to take a=
+ look inside The Yeti Is Ready: You will rejoice to hear that no disaster h=
+as accompanied the commencement of an enterprise which you have regarded wi=
+th such evil forebodings. I arrived here yesterday, and my first task is to=
+ assure my sister of my welfare and increasing confidence in the success of=
+ my undertaking. I am already far north of London, and as I walk in the str=
+eets of Petersburgh, I feel a cold northern breeze play upon my cheeks, whi=
+ch braces my nerves and fills me with=0Adelight. Do you understand this fee=
+ling? This breeze, which has travelled from the regions towards which I am =
+advancing, gives me a foretaste of those icy climes. Inspirited by this win=
+d of promise, my daydreams become more fervent and vivid. I try in vain to =
+be persuaded that the pole is the seat of frost and desolation; it ever pre=
+sents itself to my imagination as the region of beauty and delight. There, =
+Margaret, the sun is for ever visible, its broad disk just skirting the hor=
+izon and diffusing a perpetual splendour. There=E2=80=94for with your leave=
+, my sister, I will put some trust in preceding navigators=E2=80=94there sn=
+ow and frost are banished; and, sailing over a calm sea, we may be wafted t=
+o a land surpassing in wonders and in beauty every region hitherto discover=
+ed on the habitable globe. Its productions and features may be without exam=
+ple, as the phenomena of the heavenly bodies undoubtedly are in those undis=
+covered solitudes. What may not be expected in a country=0Aof eternal light=
+? I may there discover the wondrous power which attracts the needle and may=
+ regulate a thousand celestial observations that require only this voyage t=
+o render their seeming eccentricities consistent for ever. I shall satiate =
+my ardent curiosity with the sight of a part of the world never before visi=
+ted, and may tread a land never before imprinted by the foot of man. These =
+are my enticements, and they are sufficient to conquer all fear of danger o=
+r death and to induce me to commence this laborious voyage with the joy a c=
+hild feels when he embarks in a little boat, with his holiday mates, on an =
+expedition of discovery up his native river. But supposing all these conjec=
+tures to be false, you cannot contest the inestimable benefit which I shall=
+ confer on all mankind, to the last generation, by discovering a passage ne=
+ar the pole to those countries, to reach which at present so many months ar=
+e requisite; or by ascertaining the secret of the magnet, which,=0Aif at al=
+l possible, can only be effected by an undertaking such as mine. These refl=
+ections have dispelled the agitation with which I began my letter, and I fe=
+el my heart glow with an enthusiasm which elevates me to heaven, for nothin=
+g contributes so much to tranquillise the mind as a steady purpose=E2=80=
+=94a point on which the soul may fix its intellectual eye. This expedition =
+has been the favourite dream of my early years. I have read with ardour the=
+ accounts of the various voyages which have been made in the prospect of ar=
+riving at the North Pacific Ocean through the seas which surround the pole.=
+ You may remember that a history of all the voyages made for purposes of di=
+scovery composed the whole of our good Uncle Thomas=E2=80=99 library. My ed=
+ucation was neglected, yet I was passionately fond of reading. These volume=
+s were my study day and night, and my familiarity with them increased that =
+regret which I had felt, as a child, on learning that my father=E2=80=99s d=
+ying injunction=0Ahad forbidden my uncle to allow me to embark in a seafari=
+ng life. These visions faded when I perused, for the first time, those poet=
+s whose effusions entranced my soul and lifted it to heaven. I also became =
+a poet and for one year lived in a paradise of my own creation; I imagined =
+that I also might obtain a niche in the temple where the names of Homer and=
+ Shakespeare are consecrated. You are well acquainted with my failure and h=
+ow heavily I bore the disappointment. But just at that time I inherited the=
+ fortune of my cousin, and my thoughts were turned into the channel of thei=
+r earlier bent. Six years have passed since I resolved on my present undert=
+aking. I can, even now, remember the hour from which I dedicated myself to =
+this great enterprise. I commenced by inuring my body to hardship. I accomp=
+anied the whale-fishers on several expeditions to the North Sea; I voluntar=
+ily endured cold, famine, thirst, and want of sleep; I often worked harder =
+than the common sailors=0Aduring the day and devoted my nights to the study=
+ of mathematics, the theory of medicine, and those branches of physical sci=
+ence from which a naval adventurer might derive the greatest practical adva=
+ntage. Twice I actually hired myself as an under-mate in a Greenland whaler=
+, and acquitted myself to admiration. I must own I felt a little proud when=
+ my captain offered me the second dignity in the vessel and entreated me to=
+ remain with the greatest earnestness, so valuable did he consider my servi=
+ces. And now, Margaret, do I not deserve to accomplish some great purpose? =
+My life might have been passed in ease and luxury, but I preferred glory to=
+ every enticement that wealth placed in my path. Oh, that some encouraging =
+voice would answer in the affirmative! My courage and my resolution is firm=
+; but my hopes fluctuate, and my spirits are often depressed. I am about to=
+ proceed on a long and difficult voyage, the emergencies of which will dema=
+nd all my fortitude: I am=0Arequired not only to raise the spirits of other=
+s, but sometimes to sustain my own, when theirs are failing. This is the mo=
+st favourable period for travelling in Russia. They fly quickly over the sn=
+ow in their sledges; the motion is pleasant, and, in my opinion, far more a=
+greeable than that of an English stagecoach. The cold is not excessive, if =
+you are wrapped in furs=E2=80=94a dress which I have already adopted, for t=
+here is a great difference between walking the deck and remaining seated mo=
+tionless for hours, when no exercise prevents the blood from actually freez=
+ing in your veins. I have no ambition to lose my life on the post-road betw=
+een St. Petersburgh and Archangel. I shall depart for the latter town in a =
+fortnight or three weeks; and my intention is to hire a ship there, which c=
+an easily be done by paying the insurance for the owner, and to engage as m=
+any sailors as I think necessary among those who are accustomed to the whal=
+e-fishing. I do not intend to sail=0Auntil the month of June; and when shal=
+l I return? Ah, sister, how can I answer this question? If I succeed, many,=
+ many months, perhaps years, will pass before you and I may meet. If I fail=
+, you will see me again soon, or never. Farewell, my, excellent Margaret. H=
+eaven shower down blessings on you, and save me, that I may again and again=
+ testify my gratitude for all your love and kindness.</span></td>=0A</tr>=
+=0A</table>=0A</td>=0A</tr>=0A</table>=0A</td>=0A</tr>=0A</table>=0A</td>=
+=0A</tr>=0A</table>=0A</td>=0A</tr>=0A</table>=0A</div>=0A<img src=3D"https=
+://basharjkatou.lt.acemlnb.com/Prod/link-tracker?nl=3D77&c=3D2179&m=3D33122=
+&s=3D7a173e7d26abf7441884996353c13cc6&l=3Dopen&account=3Dbasharjkatou.activ=
+ehosted.com&a=3D66570412" border=3D"0" width=3D"1" height=3D"1" style=3D"di=
+splay:block;width:1px!important;min-width:1px!important;max-width:1px!impor=
+tant;height:1px!important;border:0;overflow:hidden;" /><div id=3D"ac-footer=
+" style=3D"clear:both;background-color:inherit;background:inherit;min-width=
+:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding:20px;color:#000000;=
+font-size:11px;font-family:arial,helvetica,sans-serif;line-height:140%;line=
+-height:1.4;text-align:center;box-sizing:border-box;"><center>Sent to: <spa=
+n style=3D"font-size:11px;font-family:arial,helvetica,sans-serif;font-weigh=
+t:normal;text-decoration:none;outline:none;">Lachlanbdoak@gmail.com</span><=
+br><br><a href=3D"http://basharjkatou.activehosted.com/proc.php?nl=3D77&c=
+=3D2179&m=3D33122&s=3D7a173e7d26abf7441884996353c13cc6&act=3Dunsub"=0Astyle=
+=3D"font-size:11px;font-family:arial,helvetica,sans-serif;font-weight:bold;=
+text-decoration:underline;"><span style=3D"font-weight:bold;text-decoration=
+:underline;">Unsubscribe</span></a><br><br>BJK University, 698 NE 1st Ave, =
+Miami, FL 33132, United States</center></div>=0A<br clear=3D"all" /></body>=
+=0A</html>
+--_=_swift-12102603086580d2c75bb362.38959247_=_--
+

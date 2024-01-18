@@ -4,7 +4,7 @@ from src.q.kafka_q import kafka_q
 from datetime import datetime as dt
 from src.utils.pfs_logging import log
 from src.parser.email_parser import EmailParser
-from .expected_outputs import EXPECTED_EML_1, EXPECTED_EML_2, EXPECTED_EML_3
+from .expected_outputs import EXPECTED_EML_1, EXPECTED_EML_2, EXPECTED_EML_3, EXPECTED_EML_4, EXPECTED_EML_5, EXPECTED_EML_6
 
 CONFIG = {
     'host': 'localhost', # Sub with IP address in future servers
@@ -17,8 +17,8 @@ CONFIG = {
 
 # include filepaths and expected outputs for testing purposes
 
-FILES = ['tests/data/example1.eml', 'tests/data/example2.eml', 'tests/data/example3.eml']
-OUTPUTS = [EXPECTED_EML_1, EXPECTED_EML_2, EXPECTED_EML_3]
+FILES = ['tests/data/example1.eml', 'tests/data/example2.eml', 'tests/data/example3.eml', 'tests/data/example4.eml', 'tests/data/example5.eml', 'tests/data/example6.eml']
+OUTPUTS = [EXPECTED_EML_1, EXPECTED_EML_2, EXPECTED_EML_3, EXPECTED_EML_4, EXPECTED_EML_5, EXPECTED_EML_6]
 
 class TestParser:
 
