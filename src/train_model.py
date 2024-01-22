@@ -70,7 +70,10 @@ def train_model(config_path):
     
     # choo choo
     model.fit(X_train, train_df['label'], epochs=config['model']['epochs'], batch_size=config['model']['batch_size'])
-    
+
+    # save trained model to  path specified in config
+    model.save(config['model']['trained_model_path'])
+
     # generalize to test?
     loss, accuracy = model.evaluate(X_test, test_df['label'])
     print(f'Test Loss: {loss}, Test Accuracy: {accuracy}')
@@ -79,4 +82,5 @@ if __name__ == '__main__':
     nltk.download('punkt')
     nltk.download('stopwords')
     os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+  
     train_model('config.yaml')

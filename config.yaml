@@ -3,4 +3,7 @@ data:
 model:
   epochs: 10
   batch_size: 32
-
+  trained_model_path: 'path_to_save_trained_model.h5'  # Add this line
+kafka:
+  bootstrap_servers: 'your_kafka_bootstrap_servers'
+  topic: 'kafka_email_topic'
