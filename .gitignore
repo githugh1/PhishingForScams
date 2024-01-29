@@ -6,6 +6,7 @@ docs/build
 docs/source/apidocs/
 kafka
 venv
+src/dashboard/node/app
 *.log
 
 

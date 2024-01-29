@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 class="title">{% block title %} Instances {% endblock %}</h1>
+    <div class="content">
+        {% for instance in instances %}
+            <div class="instance">
+                <p><b>#{{ instance.id }}</b></p>
+                <b>
+                    <p class="id">{{ instance.id }}</p>
+                </b>
+                <p>{{ instance.item_source }}</p>
+                <p>{{ instance.time_sent }}</p>
+                <p>{{ instance.item_key }}</p>
+                <div class="value">
+                    <h4>Value</h4>
+                    <p>{{ instance.item_val }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

@@ -17,11 +17,11 @@ from mailparse import EmailDecode
 import argparse, mysql.connector
 
 CONFIG = {
-    'host': 'localhost', # Sub with IP address in future servers
+    'host': '127.0.0.1', # Sub with IP address in future servers
     'user': 'root', # Could change with additional users
-    'password': 'Benjamin04',
+    'password': 'root_secret_pw',
     'database': 'pfs_stats', 
-    'port': '3306',
+    'port': '3307',
     'raise_on_warnings': True
 }
 
@@ -82,7 +82,7 @@ class EmailParser:
         cursor.close()
         connection.close()
 
-# Parse and Print using: python path/to/parser.py path/to/file.eml
+# Example usage: python src/parser/email_parser.py tests/data/example1.eml
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -93,5 +93,4 @@ if __name__ == "__main__":
     email_parser = EmailParser(CONFIG)
     parsed_email = email_parser.parse_email(args.file)
 
-    # Print to Terminal - Optional
     # print(parsed_email)

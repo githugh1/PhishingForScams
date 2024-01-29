@@ -1,2 +1,12 @@
-changed protobuf from 4.23.4 to 4.21.12 (version conflicts with mysql-connector-python)
-commented out tensorflow-io-gcs-filesystem==0.34.0
+node:
+    image: "node:slim"
+    container_name: frontend
+    user: "node"
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./src/dashboard/node/app:/home/node/app:ro  # read only!
+    ports:
+      - "80:8081"
+    command: "npm start"
