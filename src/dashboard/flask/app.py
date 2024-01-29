@@ -7,7 +7,7 @@ import datetime
 app = Flask(__name__)
 
 #mysql://username:password@host:port/database_name
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://pfs_user:pfs_secret_pw@127.0.0.1:3307/pfs_stats'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://pfs_user:pfs_secret_pw@pfs_db:3306/pfs_stats'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
@@ -29,4 +29,4 @@ def index():
 
 if __name__ == "__main__":
     db.create_all()
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0')
