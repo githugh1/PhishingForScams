@@ -17,26 +17,34 @@ then
     fi
 elif [ 'x'$1 == 'xup' ]; then
     if is_linux; then
-        sudo docker compose -f $kafka/docker-compose.yml up --force-recreate --build --detach kafka
+        sudo docker compose -f $kafka/docker-compose.yml up --build --detach kafka
         sleep 1
-        sudo docker compose -f $kafka/docker-compose.yml up --force-recreate --build --detach db
+        sudo docker compose -f $kafka/docker-compose.yml up --build --detach db
         sleep 5
-        sudo docker compose -f $kafka/docker-compose.yml up --force-recreate --build --detach flask
+        sudo docker compose -f $kafka/docker-compose.yml up --build --detach flask
+        sleep 5
+        sudo docker compose -f $kafka/docker-compose.yml up --build --detach node
     else
         docker compose -f $kafka/docker-compose.yml up --build --detach kafka
         sleep 1
         docker compose -f $kafka/docker-compose.yml up --build --detach db
-        sleep 1
+        sleep 5
         docker compose -f $kafka/docker-compose.yml up --build --detach flask
+        sleep 5
+        docker compose -f $kafka/docker-compose.yml up --build --detach node
     fi
 elif [ 'x'$1 == 'xdown' ]; then
     if is_linux; then
+        sudo docker compose -f $kafka/docker-compose.yml down node
+        sleep 1
         sudo docker compose -f $kafka/docker-compose.yml down flask
         sleep 1
         sudo docker compose -f $kafka/docker-compose.yml down db
         sleep 1
         sudo docker compose -f $kafka/docker-compose.yml down kafka
     else
+        docker compose -f $kafka/docker-compose.yml down node
+        sleep 1
         docker compose -f $kafka/docker-compose.yml down flask
         sleep 1
         docker compose -f $kafka/docker-compose.yml down db
