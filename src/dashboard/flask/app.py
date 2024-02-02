@@ -31,16 +31,16 @@ def index():
 @app.route('/data', methods=["GET"])
 def get_data():
     data = main.query.all()
-    #return render_template('index.html', instances=data)
-    return jsonify(data)
+    return render_template('index.html', instances=data)
+    #return jsonify(data)
 
 @app.route('/data/<string:id>', methods=["GET"])
 def get_data_by_id(id):
     data = main.query.filter(main.id == id).all()
     if data is None:
         abort(404)
-    #return render_template('index.html', instances=data)
-    return jsonify(data)
+    return render_template('index.html', instances=data)
+    #return jsonify(data)
 
 if __name__ == "__main__":
     db.create_all()
