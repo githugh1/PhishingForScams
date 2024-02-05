@@ -1,0 +1,36 @@
+# This file contains various configurations to access different mail accounts using getmail
+#
+# Example:
+#
+# [retriever]
+# type = SimpleIMAPSSLRetriever
+# server = imap.gmail.com
+# username = your.user
+# password = your_password # You may need to set up an app password under gmail->settings->security
+# mailboxes = ("INBOX", "[Gmail]/Spam",) etc
+
+# [destination]
+# type = Maildir
+# path = /path/to/docker/volume/new_emails/ -> dir to save emails in
+
+# getmail usage: getmail -r /path/to/getmailrc
+
+[retriever]
+type = SimpleIMAPSSLRetriever
+server = imap.gmail.com
+username = lachlanbdoak
+password = lvno saog mgsa epvi
+mailboxes = ("INBOX",)
+
+[destination]
+type = Maildir
+# DO NOT MODIFY UNLESS EDITING DOCKER COMPOSE
+path = ./mail/
+user = mailuser
+
+[options]
+verbose = 2
+#message_log = ./log
+read_all = false
+delivered_to = false
+received = false

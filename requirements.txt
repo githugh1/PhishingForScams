@@ -13,6 +13,7 @@ Flask==3.0.1
 Flask-SQLAlchemy==3.1.1
 flatbuffers==23.5.26
 gast==0.5.4
+getmail6=6.18.13 #temp
 google-auth==2.24.0
 google-auth-oauthlib==1.1.0
 google-pasta==0.2.0
