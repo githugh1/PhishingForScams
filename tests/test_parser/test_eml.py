@@ -8,10 +8,10 @@ from .expected_outputs import EXPECTED_EML_1, EXPECTED_EML_2, EXPECTED_EML_3, EX
 
 CONFIG = {
     'host': 'localhost', # Sub with IP address in future servers
-    'user': 'root', # Could change with additional users
-    'password': 'your_password',
-    'database': 'phishing_for_scams', 
-    'port': '3306',
+    'user': 'pfs_user', # Could change with additional users
+    'password': 'pfs_secret_pw',
+    'database': 'pfs_stats', 
+    'port': '3307',
     'raise_on_warnings': True
 }
 

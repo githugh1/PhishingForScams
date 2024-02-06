@@ -7,5 +7,6 @@ docs/source/apidocs/
 kafka
 venv
 *.log
+src/dashboard/react-app/node_modules
 
 

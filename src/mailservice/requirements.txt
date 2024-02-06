@@ -1,1 +1,2 @@
 getmail6==6.18.13
+kafka-python==2.0.2
