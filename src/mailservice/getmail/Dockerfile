@@ -5,6 +5,7 @@ WORKDIR /home/mailservice
 COPY mailservice/requirements.txt .
 COPY mailservice/q_mail_p.py .
 COPY mailservice/q_mail.sh .
+COPY parser/email_parser.py .
 
 RUN mkdir src
 
