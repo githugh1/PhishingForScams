@@ -18,22 +18,22 @@ INSERT INTO main (id, item_source, time_sent, item_key, item_val)
 VALUES("<acf26712000020a1@comsoft.co.in>", "scanner", now(), "result", "SCAM");
 
 INSERT INTO main (id, item_source, time_sent, item_key, item_val)
-VALUES("<xyz123456789@fakeemail.com>", "detector", '2024-02-18 12:34:56', "outcome", "SCAM");
+VALUES("<xyz123456789@fakeemail.com>", "scanner", '2024-02-18 12:34:56', "outcome", "SCAM");
 
 INSERT INTO main (id, item_source, time_sent, item_key, item_val)
-VALUES("<789abcde0123456@scamalert.net>", "fraud detector", '2024-02-18 08:15:30', "status", "SCAM");
+VALUES("<789abcde0123456@scamalert.net>", "scanner", '2024-02-18 08:15:30', "status", "SCAM");
 
 INSERT INTO main (id, item_source, time_sent, item_key, item_val)
-VALUES("<qwerty123@phishingtrap.com>", "alert system", '2024-02-18 15:45:00', "flag", "SAFE");
+VALUES("<qwerty123@phishingtrap.com>", "scanner", '2024-02-18 15:45:00', "flag", "SAFE");
 
 INSERT INTO main (id, item_source, time_sent, item_key, item_val)
-VALUES("<def456789012345@spamscanner.io>", "spam filter", '2024-02-18 14:25:00', "scan_result", "SCAM");
+VALUES("<def456789012345@spamscanner.io>", "scanner", '2024-02-18 14:25:00', "scan_result", "SCAM");
 
 INSERT INTO main (id, item_source, time_sent, item_key, item_val)
-VALUES("<4567890123abcde@fraudalert.com>", "security system", '2024-02-18 09:30:45', "alert_status", "SAFE");
+VALUES("<4567890123abcde@fraudalert.com>", "scanner", '2024-02-18 09:30:45', "alert_status", "SAFE");
 
 INSERT INTO main (id, item_source, time_sent, item_key, item_val)
-VALUES("<678901234defg@securityservice.net>", "threat detection", '2024-02-18 11:11:11', "warning_message", "SCAM");
+VALUES("<678901234defg@securityservice.net>", "scanner", '2024-02-18 11:11:11', "warning_message", "SCAM");
 
 /*INSERT INTO main (id, item_source, time_sent, item_key, item_val)
 VALUES

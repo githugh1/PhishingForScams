@@ -11,7 +11,7 @@ parser.add_argument('--write-to-kafka', type=str, help='File path to be sent to 
 
 args = parser.parse_args()
 
-# Dynamic topics somewhat work -> still failing? Check pytest for kafka_q
+# Dynamic topics somewhat work -> still failing?
 
 _new_topic = dt.timestamp(dt.now())
 _topics = [f'Q1-{_new_topic}', f'Q2-{_new_topic}']
